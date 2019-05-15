@@ -26,25 +26,36 @@
                     <?php echo $this->getChildHtml('topMenu') ?>
                 </nav>
             </div>
-            <div class="acl-nlt-header-sec-nav-right">
-                <ul>
-                    <li class="acl-nlt-header-sec-nav-search"> 
-                        <div class="search-area">
-                            <a href="javascript:void(0)" class="search-toggle-icon"><i class="porto-icon-search"></i></a>
-                            <div class="search_area" style="display:none;">
-                                <div class="block block-search">
-                                    <?php echo $this->getChildHtml('topSearch'); ?>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="acl-nlt-header-sec-nav-cart">
-                        <div data-block="minicart" class="minicart-wrapper">
-                            <?php echo $this->getChildHtml('minicart'); ?>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+
+
+
+
+
+
+         <div class="acl-nlt-header-sec-nav-right">
+            <ul>
+                <li class="acl-nlt-header-sec-nav-search">  <div class="search-area">
+                    <a href="javascript:void(0)" class="search-toggle-icon"><i class="porto-icon-search"></i></a>
+                    <div class="search_area" style="display:none;"><div class="block block-search">
+                 <?php echo $this->getChildHtml('topSearch'); ?>
+                    </div>
+                    </div>
+                    </div>
+                </li>
+                <li class="acl-nlt-header-sec-nav-cart">
+                    <div data-block="minicart" class="minicart-wrapper">
+                        <?php echo $this->getChildHtml('minicart'); ?>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+
+            
         </div>
    </div>
 </header>
@@ -62,36 +73,3 @@
         });
     });
 </script>
-<!--div class="header-container type11">
-    <div class="acl-nlt-header-sec-bot">
-        <div class="acl-nlt-header-sec-nav">
-            <div class="sections nav-sections">
-                <div class="section-items nav-sections-items" role="tablist">
-                    <div class="section-item-title nav-sections-item-title active" data-role="collapsible" role="tab" data-collapsible="true" aria-controls="store.menu" aria-selected="false" aria-expanded="true" tabindex="0">
-                        <a class="nav-sections-item-switch" data-toggle="switch" href="#store.menu">Menu</a>
-                    </div>
-                <div class="section-item-content nav-sections-item-content" id="store.menu" data-role="content" role="tabpanel" aria-hidden="false">
-                    <nav class="navigation sw-megamenu " role="navigation">
-                    <?php //echo $this->getChildHtml('topMenu') ?>
-                    </nav>
-                </div>
-            </div>
-            </div>
-            <div class="acl-nlt-header-sec-nav-right">
-            <ul>
-                <li class="acl-nlt-header-sec-nav-search">  <div class="search-area">
-                    <a href="javascript:void(0)" class="search-toggle-icon"><i class="porto-icon-search"></i>
-                    <?php //echo $this->getChildHtml('topSearch'); ?>
-                    </a>
-                </li>
-                <li class="acl-nlt-header-sec-nav-cart">
-                    <div data-block="minicart" class="minicart-wrapper">
-                    <a class="action showcart" href="" data-bind="scope: 'minicart_content'">
-                        <?php //echo $this->getChildHtml('minicart'); ?>
-                    </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    <?php //echo $this->getChildHtml('mobile.nav') ?> 
-</div-->

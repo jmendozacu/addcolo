@@ -201,11 +201,11 @@ header.page-header{
 	float: left;
 	text-align: right;
 	margin-bottom: 0px;
+	height: 20px;
 }
 .page-header.type11 .acl-nlt-header-sec-nav-search .block-search{
-	margin-top: 20px;
-	left: auto;
-	right: 15px;
+	float:right;
+	right: -40px;
 }
 .page-header.type11 .acl-nlt-header-sec-nav-search .search-area .search-toggle-icon{
 	width: 18px;
@@ -223,12 +223,21 @@ header.page-header{
 	right: 3px;
 	margin-top: 0px;
 }
-.page-header.type11 .acl-nlt-header-sec-nav-cart > .minicart-wrapper > a.action:before{
+.page-header.type11 .acl-nlt-header-sec-nav-cart > .minicart-wrapper:before{
 	font-size: 0px;
 	width: 24px;
 	height: 21px;
 	background: url('images/sprt-image.png') -21px -1px no-repeat;
 	display: inline-block;
+}
+.page-header.type11 .acl-nlt-header-sec-nav-cart > .minicart-wrapper .mini-cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    /* text-align: right; */
+    height: 21px;
+    width: 14px;
 }
 .page-header.type11 .acl-nlt-header-sec-nav-cart .minicart-wrapper a.action .counter.qty .counter-number{
 	display: none;
@@ -1649,7 +1658,7 @@ ul.content .table-data-sheet tr td:first-child{
 	max-width: 1210px;
 	padding: 15px;
 	margin: auto;
-	top: 55%;
+	top: 25%;
 	transform: translate(0,-50%);
 	-moz-transform: translate(0,-50%);
 	-webkit-transform: translate(0,-50%);
@@ -2725,9 +2734,6 @@ div#click_size tr td span img{
 	.page-header.type11 .acl-nlt-header-sec-nav-search .search-area .search_area .block-search .label:before{
 		margin-right: 0px;
 	}
-	.page-header.type11 .acl-nlt-header-sec-nav-search .block-search{
-		margin-top: -20px;
-	}
 	.page-header.type11 .acl-nlt-header-sec-nav-search .search-area .search_area .block-search .label.active + .control{
 		position: absolute;	
 		left: auto;
@@ -3026,9 +3032,6 @@ div#click_size tr td span img{
 .type11 .menu-wrapper {
     background: none !important;
 }
-.menu-all-pages-container .menu li.act {
-    display: none;
-}
 .owl-controls.clickable {
     display: none !important;
 }
@@ -3068,4 +3071,37 @@ div#click_size tr td span img{
     margin: 0 auto;
     float: none;
     display: table;
+}
+.catalog-category-view .main-container {
+    padding: 0;
+}
+input#search {
+    position: static;
+    margin: 0;
+    border-color: transparent;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px 50px 10px 20px;
+    background-color: #fff;
+    color: #777;
+    border-color: #ccc;
+    height: 36px;
+    width: 270px;
+}
+.acl-nlt-header-sec-nav-cart span.cart-info {
+    display: none !important;
+}
+.acl-nlt-header-sec-nav-cart .mybag-link{
+	height: 20px
+}
+.block .actions button.button {
+    float: none !important;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    border-left: 1px solid #ccc;
+    padding: 0 10px;
+}
+.block .actions button.button:hover {
+    color: #777;
 }
