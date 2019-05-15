@@ -221,6 +221,12 @@
             <block type="cms/block" name="custom_side_block" after="-"><action method="setBlockId"><block_id>porto_left_side_category</block_id></action></block>
         </reference>
     </catalog_category_default>
+    <catalog_category_default translate="label">
+   <remove name="breadcrumbs"/>
+</catalog_category_default>
+<catalog_category_layered translate="label">
+   <remove name="breadcrumbs"/>
+</catalog_category_layered>
     
     <catalog_category_layered>
         <reference name="root">
