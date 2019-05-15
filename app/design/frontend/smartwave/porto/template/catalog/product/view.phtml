@@ -55,7 +55,9 @@
     var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
 </script>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
-<div class="product-view <?php echo $product_page_type; ?> <?php if($move_product_tab): ?>moved-tab<?php endif;?> <?php if($product_page_type == 'fullwidth'): ?>fullwidth-row<?php endif; ?>" <?php if($enabled_richsnippets): ?><?php echo $helper_richsnippets->getProductItemscope(); ?><?php endif; ?>>
+<div class="sin-pro-med-info-main">
+<div class="product-view container <?php echo $product_page_type; ?> <?php if($move_product_tab): ?>moved-tab<?php endif;?> <?php if($product_page_type == 'fullwidth'): ?>fullwidth-row<?php endif; ?>" <?php if($enabled_richsnippets): ?><?php echo $helper_richsnippets->getProductItemscope(); ?><?php endif; ?>>
+    <div class="acl-nlt-cstm-container">
     <div class="product-essential">
     <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
         <?php echo $this->getBlockHtml('formkey') ?>
@@ -161,7 +163,8 @@ if($enable_addtocart_sticky){
                     $product_shop_class = "col-md-3";
                 }
             ?>
-            <div class="product-img-box <?php echo $product_img_box_class; ?> <?php echo Mage::getStoreConfig("porto_settings/product_view/thumbnail_image_type", $code); ?>">
+            
+            <div class="product-img-box <?php echo $product_img_box_class; ?> <?php echo Mage::getStoreConfig("porto_settings/product_view/thumbnail_image_type", $code); ?> product media">
                 <?php echo $this->getChildHtml('media') ?>
             </div>
             <?php else: ?>
@@ -203,8 +206,12 @@ if($enable_addtocart_sticky){
                     </div>
                     <?php endif; ?>
                 </div>
-                <div class="product-name">
-                    <h1 <?php if($enabled_richsnippets): ?>itemprop="name"<?php endif; ?>><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+                <div class="page-title-wrapper product">
+                <div class="page-title">
+                    <h1 <?php if($enabled_richsnippets): ?>itemprop="name"<?php endif; ?>>
+                        <span class="base" data-ui-id="page-title-wrapper" itemprop="name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></span>  
+                    </h1>
+                </div>
                 </div>
                 <?php if($enabled_richsnippets): ?>
                 <?php
@@ -252,7 +259,8 @@ if($enable_addtocart_sticky){
             <?php endif; ?>
             </div>
         <?php endif; ?>
-            <div class="product-shop <?php echo $product_shop_class; ?>">
+            <!--div class="product-shop <?php echo $product_shop_class; ?>"-->
+            <div class="product-info-main product_info_cus">
             <?php if($product_page_type != 'sticky_left_right'): ?>
             <?php if($product_page_type == 'carousel'): ?>
                 <?php echo $this->getChildHtml('addthis_sharetool'); ?>
@@ -289,8 +297,15 @@ if($enable_addtocart_sticky){
                     </div>
                     <?php endif; ?>
                 </div>
-                <div class="product-name">
+                <!-- <div class="product-name">
                     <h1 <?php if($enabled_richsnippets): ?>itemprop="name"<?php endif; ?>><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+                </div> -->
+                <div class="page-title-wrapper product">
+                <div class="page-title">
+                    <h1 <?php if($enabled_richsnippets): ?>itemprop="name"<?php endif; ?>>
+                        <span class="base" data-ui-id="page-title-wrapper" itemprop="name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></span>  
+                    </h1>
+                </div>
                 </div>
                 <?php if($enabled_richsnippets): ?>
                 <?php
@@ -314,33 +329,42 @@ if($enable_addtocart_sticky){
                         echo $review_html;
                     }else{
                 ?>
-                    <div class="ratings">
-                        <div class="rating-box">
+                <div class="product-reviews-summary no-rating">
+                    <div class="reviews-actions">
+                        <!-- <div class="rating-box">
                             <div class="rating" style="width:0"></div>
-                        </div>
+                        </div> -->
                         <p class="rating-links">
-                            <a href="javascript:void(0)"><?php echo $this->__('%s Review(s)', 0);?></a>
+                            <a class="action view" href="javascript:void(0)"><?php echo $this->__('%s Reviews', 0);?></a>
+                            <a class="action add" href="#review-form">Add Your Review</a>
                         </p>
                     </div>
+                </div>
                 <?php
                     }
                 ?>
                 <?php else: ?>
-                    <div class="ratings">
-                        <div class="rating-box">
+                    <div class="product-reviews-summary no-rating">
+                    <div class="reviews-actions">
+                        <!-- <div class="rating-box">
                             <div class="rating" style="width:0"></div>
-                        </div>
+                        </div> -->
                         <p class="rating-links">
-                            <a href="javascript:void(0)"><?php echo $this->__('%s Review(s)', 0);?></a>
+                            <a class="action view" href="javascript:void(0)"><?php echo $this->__('%s Reviews', 0);?></a>
+                            <a class="action add" href="#review-form">Add Your Review</a>
                         </p>
                     </div>
+                </div>
                 <?php endif; ?>
             <?php endif; ?>
             <?php endif; ?>
                 <?php if ($_product->getShortDescription()):?>
-                    <div class="short-description <?php if($move_custom_block):?>no-border<?php endif;?>">
-                        <h2><?php echo $this->__('Quick Overview') ?></h2>
+                    <!-- <div class="short-description <?php if($move_custom_block):?>no-border<?php endif;?>">
+                        <h2><?php //echo $this->__('Quick Overview') ?></h2>
                         <div class="std" <?php if($enabled_richsnippets): ?>itemprop="description"<?php endif; ?>><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+                    </div> -->
+                    <div class="product attribute overview <?php if($move_custom_block):?>no-border<?php endif;?>">
+                        <div class="value" <?php if($enabled_richsnippets): ?>itemprop="description"<?php endif; ?>><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
                     </div>
                 <?php endif;?>
                 <?php if($attr_custom_block_html && $product_page_type == 'carousel'):?>
@@ -361,6 +385,7 @@ if($enable_addtocart_sticky){
                         <p class="email-friend"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
                     <?php endif; ?>
                 </div>
+                <!-- </div> -->
                 <div class="product-shop <?php echo $product_shop_class; ?> md-order-12">
                     <?php if($attr_custom_block_html && $product_page_type == 'wide_grid'):?>
                         <div class="short-custom-block">
@@ -368,21 +393,24 @@ if($enable_addtocart_sticky){
                         </div>
                     <?php endif;?>
                 <?php endif; ?>
-                <div class="product-info">
+                <div class="product-info-price">
+                    <div class="product-info-stock-sku">
+                    <?php if($sku = $_product->getSku()): ?>
+                        <?php if($enabled_richsnippets): ?><meta itemprop="productID" content="sku:<?php echo $sku; ?>" /><?php endif; ?>
+                    <?php endif; ?>
+                    </div>
                     <div <?php if($enabled_richsnippets) echo $helper_richsnippets->getOfferItemscope(); ?>>
                         <?php echo $this->getChildHtml('product_type_data'); ?>
                         <?php echo $this->getTierPriceHtml(); ?>
                         <?php echo $price_properties; ?>
                     </div>
-                    <?php echo $this->getChildHtml('extrahint') ?>
+                    <!-- <?php echo $this->getChildHtml('extrahint') ?>
                     <?php if(!($product_page_type == 'sticky_left_right' || $product_page_type == 'wide_grid')): ?>
                     <?php if ($this->canEmailToFriend()): ?>
                         <p class="email-friend"><a href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></p>
                     <?php endif; ?>
-                    <?php endif; ?>
-                    <?php if($sku = $_product->getSku()): ?>
-                        <?php if($enabled_richsnippets): ?><meta itemprop="productID" content="sku:<?php echo $sku; ?>" /><?php endif; ?>
-                    <?php endif; ?>
+                    <?php endif; ?> -->
+                    
                     <?php echo $this->getChildHtml('alert_urls') ?>
                     <?php echo $this->getChildHtml('other');?>
                 </div>
@@ -612,6 +640,7 @@ if($enable_addtocart_sticky){
         }.bind(productAddToCartForm);
     </script>
     </div>
+</div>
     <?php if($attr_custom_block_html && $product_page_type == 'sticky_right'):?>
         <div class="fullwidth-custom-block">
             <?php echo $attr_custom_block_html; ?>
@@ -656,6 +685,7 @@ if($enable_addtocart_sticky){
         </div>
     <?php endif;?>
     <?php if($product_page_type || !Mage::getStoreConfig("porto_settings/product_view/move_upsell",$code)) echo $upsell; ?>
+</div>
 </div>
 <script type="text/javascript">
     jQuery(function($){
