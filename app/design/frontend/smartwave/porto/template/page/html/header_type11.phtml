@@ -7,135 +7,63 @@
 <header class="page-header type11 ">
    <span data-action="toggle-nav" class="action nav-toggle"><span>Toggle Nav</span></span>
     <div class="acl-nlt-header-sec">
-    <div class="acl-nlt-header-sec-top">
-        <a href="<?php echo Mage::getUrl('customer/account/login'); ?>" class="acl-nlt-header-top-login">Log In &gt;<em class="porto-icon-user"></em>
-        </a>
-        <div class="acl-nlt-logo-box">
-                    <strong class="logo">
-                       <?php if ($this->getIsHomePage()):?>
-                        <strong><?php echo $this->getLogoAlt(); ?></strong><a href="<?php echo $this->getUrl(''); ?>" title="<?php echo $this->getLogoAlt(); ?>"><img src="<?php echo $this->getLogoSrc(); ?>" alt="<?php echo $this->getLogoAlt(); ?>" /></a>
+        <div class="acl-nlt-header-sec-top">
+            <a href="<?php echo Mage::getUrl('customer/account/login'); ?>" class="acl-nlt-header-top-login">Log In &gt;<em class="porto-icon-user"></em></a>
+            <div class="acl-nlt-logo-box">
+                <strong class="logo">
+                    <?php if ($this->getIsHomePage()):?>
+                    <strong><?php echo $this->getLogoAlt(); ?></strong><a href="<?php echo $this->getUrl(''); ?>" title="<?php echo $this->getLogoAlt(); ?>"><img src="<?php echo $this->getLogoSrc(); ?>" alt="<?php echo $this->getLogoAlt(); ?>"     /></a>
                         <?php else:?>
                         <a href="<?php echo $this->getUrl(''); ?>" title="<?php echo $this->getLogoAlt(); ?>"><strong><?php echo $this->getLogoAlt(); ?></strong><img src="<?php echo $this->getLogoSrc(); ?>" alt="<?php echo $this->getLogoAlt(); ?>" /></a>
                         <?php endif; ?>
-                    </strong>
-                </div>
-                <a href="<?php echo Mage::getUrl('customer/account/create'); ?>" class="acl-nlt-header-top-join">Join</a>
+                </strong>
             </div>
-    <div class="acl-nlt-header-sec-bot">
-        <div class="acl-nlt-header-sec-nav">
-    <?php echo $this->getChildHtml('topMenu') ?>
-     </div>
-     <div class="acl-nlt-header-sec-nav-right">
-            <ul>
-                <li class="acl-nlt-header-sec-nav-search">  <div class="search-area">
-                    <a href="javascript:void(0)" class="search-toggle-icon"><i class="porto-icon-search"></i></a>
-                    <div class="search_area" style="display:none;"><div class="block block-search">
-    <div class="block block-title"><strong>Search</strong></div>
-    <div class="block block-content">
-        <form class="form minisearch" id="search_mini_form" action="https://addcolo-staging.t.gudeer.com/index.php/catalogsearch/result/" method="get">
-            <div class="field search">
-                <label class="label" for="search" data-role="minisearch-label">
-                    <span>Search</span>
-                </label>
-                <div class="control">
-                    <input id="search" type="text" name="q" value="" placeholder="Search..." class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off">
-                    <div id="search_autocomplete" class="search-autocomplete"></div>
-                    <div class="nested">
-    <a class="action advanced" href="https://addcolo-staging.t.gudeer.com/index.php/catalogsearch/advanced/" data-action="advanced-search">
-        Advanced Search    </a>
-</div>
-                </div>
-            </div>
-            <div class="actions">
-                <button type="submit" title="Search" class="action search" disabled="">
-                    <span>Search</span>
-                </button>
-            </div>
-        </form>
-    </div>
-</div>
-</div>
-                </div></li>
-                <li class="acl-nlt-header-sec-nav-cart">
-<div data-block="minicart" class="minicart-wrapper">
-    <a class="action showcart" href="https://addcolo-staging.t.gudeer.com/index.php/checkout/cart/" data-bind="scope: 'minicart_content'">
-        <span class="text">Cart</span>
-        <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
-            <span class="counter-number">
-            <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-            <!-- ko ifnot: getCartParam('summary_count') -->0<!-- /ko -->
-            </span>
-            <span class="counter-label">
-                <!-- ko i18n: 'items' --><span>items</span><!-- /ko -->
-            </span>
-        </span>
-    </a>
-            
-        <script>
-        window.checkout = {"shoppingCartUrl":"https:\/\/addcolo-staging.t.gudeer.com\/index.php\/checkout\/cart\/","checkoutUrl":"https:\/\/addcolo-staging.t.gudeer.com\/index.php\/checkout\/","updateItemQtyUrl":"https:\/\/addcolo-staging.t.gudeer.com\/index.php\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"https:\/\/addcolo-staging.t.gudeer.com\/index.php\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"https:\/\/addcolo-staging.t.gudeer.com\/index.php\/","minicartMaxItemsVisible":5,"websiteId":"2","maxItemsToDisplay":10,"storeId":"2","customerLoginUrl":"https:\/\/addcolo-staging.t.gudeer.com\/index.php\/customer\/account\/login\/referer\/aHR0cHM6Ly9hZGRjb2xvLXN0YWdpbmcudC5ndWRlZXIuY29tL2luZGV4LnBocC8%2C\/","isRedirectRequired":false,"autocomplete":"off","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/addcolo-staging.t.gudeer.com\/index.php\/captcha\/refresh\/","isRequired":false,"timestamp":1557835642}}};
-    </script>
-    
-<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front mage-dropdown-dialog" tabindex="-1" role="dialog" aria-describedby="ui-id-3" style="display: none;"><div class="block block-minicart empty ui-dialog-content ui-widget-content" data-role="dropdownDialog" id="ui-id-3" style="display: block;">
-            <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
-                <!-- ko template: getTemplate() -->
-<div class="block-title">
-    <strong>
-        <span class="text"><!-- ko i18n: 'My Cart' --><span>My Cart</span><!-- /ko --></span>
-        <span class="qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false },
-                       attr: { title: $t('Items in Cart') }" title="Items in Cart">
-            <!-- ko text: getCartParam('summary_count') -->0<!-- /ko -->
-        </span>
-    </strong>
-</div>
-
-<div class="block-content">
-    <button type="button" id="btn-minicart-close" class="action close" data-action="close" data-bind="attr: { title: $t('Close') }" title="Close">
-        <span><!-- ko i18n: 'Close' --><span>Close</span><!-- /ko --></span>
-    </button>
-
-    <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-
-    <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-
-    <!-- ko ifnot: getCartParam('summary_count') -->
-        <strong class="subtitle empty" data-bind="visible: closeSidebar()">
-            <!-- ko i18n: 'You have no items in your shopping cart.' --><span>You have no items in your shopping cart.</span><!-- /ko -->
-        </strong>
-        <!-- ko if: getCartParam('cart_empty_message') --><!-- /ko -->
-    <!-- /ko -->
-
-    <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-
-    <div id="minicart-widgets" class="minicart-widgets">
-        <!-- ko foreach: getRegion('promotion') -->
-            <!-- ko template: getTemplate() -->
-<!-- ko foreach: {data: elems, as: 'element'} --><!-- /ko -->
-<!-- /ko -->
-        <!-- /ko -->
-    </div>
-</div>
-<!-- ko foreach: getRegion('sign-in-popup') --><!-- /ko -->
-<!-- /ko -->
-            </div>
-        </div></div></div>
-
-
-</li>
-            </ul>
+            <a href="<?php echo Mage::getUrl('customer/account/create'); ?>" class="acl-nlt-header-top-join">Join</a>
         </div>
-
-
- </div>
+        <div class="acl-nlt-header-sec-bot">
+            <div class="acl-nlt-header-sec-nav">
+                <nav class="navigation sw-megamenu " role="navigation">
+                    <?php echo $this->getChildHtml('topMenu') ?>
+                </nav>
+            </div>
+            <div class="acl-nlt-header-sec-nav-right">
+                <ul>
+                    <li class="acl-nlt-header-sec-nav-search"> 
+                        <div class="search-area">
+                            <a href="javascript:void(0)" class="search-toggle-icon"><i class="porto-icon-search"></i></a>
+                            <div class="search_area" style="display:none;">
+                                <div class="block block-search">
+                                    <?php echo $this->getChildHtml('topSearch'); ?>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="acl-nlt-header-sec-nav-cart">
+                        <div data-block="minicart" class="minicart-wrapper">
+                            <?php echo $this->getChildHtml('minicart'); ?>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
    </div>
 </header>
-
-
-
-
-
-<div class="header-container type11">
-
-            <!-- <div class="acl-nlt-header-sec-bot">
+<script type="text/javascript">
+    jQuery(function($){
+        $('.search-toggle-icon').click(function()
+        {
+            $('.search_area').toggleClass('show');
+        });
+              
+        jQuery('.nl-footer-colmn-sec h3').click(function() 
+        {
+            jQuery(this).next('.nl-footer-link-list').toggle();
+            jQuery(this).toggleClass('expanded');
+        });
+    });
+</script>
+<!--div class="header-container type11">
+    <div class="acl-nlt-header-sec-bot">
         <div class="acl-nlt-header-sec-nav">
             <div class="sections nav-sections">
                 <div class="section-items nav-sections-items" role="tablist">
@@ -144,26 +72,26 @@
                     </div>
                 <div class="section-item-content nav-sections-item-content" id="store.menu" data-role="content" role="tabpanel" aria-hidden="false">
                     <nav class="navigation sw-megamenu " role="navigation">
-                    <?php echo $this->getChildHtml('topMenu') ?>
+                    <?php //echo $this->getChildHtml('topMenu') ?>
                     </nav>
                 </div>
             </div>
             </div>
-        <div class="acl-nlt-header-sec-nav-right">
+            <div class="acl-nlt-header-sec-nav-right">
             <ul>
                 <li class="acl-nlt-header-sec-nav-search">  <div class="search-area">
                     <a href="javascript:void(0)" class="search-toggle-icon"><i class="porto-icon-search"></i>
-                    <?php echo $this->getChildHtml('topSearch'); ?>
+                    <?php //echo $this->getChildHtml('topSearch'); ?>
                     </a>
                 </li>
                 <li class="acl-nlt-header-sec-nav-cart">
                     <div data-block="minicart" class="minicart-wrapper">
                     <a class="action showcart" href="" data-bind="scope: 'minicart_content'">
-                        <?php echo $this->getChildHtml('minicart'); ?>
+                        <?php //echo $this->getChildHtml('minicart'); ?>
                     </a>
                     </div>
                 </li>
             </ul>
         </div>
-    <?php echo $this->getChildHtml('mobile.nav') ?> -->
-</div>
+    <?php //echo $this->getChildHtml('mobile.nav') ?> 
+</div-->
