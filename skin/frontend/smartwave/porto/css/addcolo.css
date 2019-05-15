@@ -3105,3 +3105,10 @@ input#search {
 .block .actions button.button:hover {
     color: #777;
 }
+.catalog-product-view .top-container {
+    display: none;
+}
+.catalog-product-view .main-container.col1-layout {
+    padding: 0;
+    background: #fcf9f8;
+}
