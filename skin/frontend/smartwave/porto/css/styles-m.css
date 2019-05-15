@@ -11775,7 +11775,6 @@ body {
   background-color: #ffffff;
   border-top: 3px solid #0088cc;
   position: relative;
-  z-index: 4;
 }
 .page-header .panel.wrapper {
   background-color: #f0f0ed;
