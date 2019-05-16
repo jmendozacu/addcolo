@@ -28,7 +28,7 @@
     $attr_custom_block_html_2 = $_processor->filter($_product->getData('custom_block_2'));
     $custom_block_html = "";
     $custom_block_id = "";
-	$custom_block_tab_html = "";
+    $custom_block_tab_html = "";
     if(!$product_page_type) {
         if(!$custom_block_html)
             $custom_block_id = Mage::getStoreConfig("porto_settings/product_view/custom_block_id",$code);
@@ -126,11 +126,11 @@ if($enable_addtocart_sticky){
                         </span>
                     <?php endif; ?>
                     <?php endif; ?>
-					<?php if ($_product->isAvailable()): ?>
-						<p class="availability in-stock"><span>(<?php echo $this->__('In stock') ?>)</span></p>
-					<?php else: ?>
-						<p class="availability out-of-stock"><span>(<?php echo $this->__('Out of stock') ?>)</span></p>
-					<?php endif; ?>
+                    <?php if ($_product->isAvailable()): ?>
+                        <p class="availability in-stock"><span>(<?php echo $this->__('In stock') ?>)</span></p>
+                    <?php else: ?>
+                        <p class="availability out-of-stock"><span>(<?php echo $this->__('Out of stock') ?>)</span></p>
+                    <?php endif; ?>
                 </div>
                 <?php if($_product->isSaleable()): ?>
                 <?php $buttonTitle = $this->__('Add to Cart'); ?>
@@ -510,9 +510,9 @@ if($enable_addtocart_sticky){
                                     if(window.parent.jQuery('.fixed-header .mini-cart')){
                                         window.parent.jQuery('.fixed-header .mini-cart').replaceWith(data.toplink);
                                     }
-									if(window.parent.jQuery('.sticky-header .mini-cart')){
-										window.parent.jQuery('.sticky-header .mini-cart').replaceWith(data.toplink);
-									}
+                                    if(window.parent.jQuery('.sticky-header .mini-cart')){
+                                        window.parent.jQuery('.sticky-header .mini-cart').replaceWith(data.toplink);
+                                    }
                                     if(window.parent.jQuery('.col-right .block.block-cart')){
                                         window.parent.jQuery('.col-right .block.block-cart').replaceWith(data.cart_sidebar);
                                     }
@@ -540,9 +540,9 @@ if($enable_addtocart_sticky){
                                     if(jQuery('.fixed-header .mini-cart')){
                                         jQuery('.fixed-header .mini-cart').replaceWith(data.toplink);
                                     }
-									if(jQuery('.sticky-header .mini-cart')){
-										jQuery('.sticky-header .mini-cart').replaceWith(data.toplink);
-									}
+                                    if(jQuery('.sticky-header .mini-cart')){
+                                        jQuery('.sticky-header .mini-cart').replaceWith(data.toplink);
+                                    }
                                     if(jQuery('.col-right .block.block-cart')){
                                         jQuery('.col-right .block.block-cart').replaceWith(data.cart_sidebar);
                                     }
@@ -685,6 +685,12 @@ if($enable_addtocart_sticky){
         </div>
     <?php endif;?>
     <?php if($product_page_type || !Mage::getStoreConfig("porto_settings/product_view/move_upsell",$code)) echo $upsell; ?>
+</div>
+<div class="product gal_details_cus">
+    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('productship')->toHtml();?> 
+</div>
+<div class="reviews-cus-wrapper faqprd_cus">
+    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('productfaq')->toHtml();?> 
 </div>
 </div>
 <script type="text/javascript">
