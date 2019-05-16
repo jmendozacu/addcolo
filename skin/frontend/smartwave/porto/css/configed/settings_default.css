@@ -864,42 +864,25 @@ a.comparelink .icon-compare:before {
     margin: 0;
     border-color: #dae2e6;
 }
-.qty-changer {
-    display: block;
-}
+
 .qty-changer >a {
-    position: absolute;
-    top: 0;
-    width: 30px;
-    height: 43px;
-    border: solid 1px #dae2e6;
-    line-height: 41px;
-    font-size: 11px;
-    color: #8798a2;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 18px;
+    line-height: 16px;
+    margin-top: 2px;
+    color: #ccc;
+    font-size: 10px;
 }
 .qty-changer .qty_inc {
     right: 1px;
 }
-.qty-changer .qty_inc i:before {
-    content: '\e873';
-}
 .qty-changer .qty_dec {
     left: 1px;
 }
-.qty-changer .qty_dec i:before {
-    content: '\e874';
-}
 .add-to-cart button.button {
     height: 43px;
-}
-.add-to-cart button.button span {
-    height: 43px;
-    text-transform: uppercase;
-    font-family: 'Oswald';
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    font-weight: 400;
-    line-height: 41px;
 }
 .add-to-cart button.button span i {
     font-size: 18px;
