@@ -1405,10 +1405,10 @@ footer.page-footer .footer .footer-middle > .container{
 .review_form_popup fieldset.fieldset.review-fieldset .field .control input, .review_form_popup fieldset.fieldset.review-fieldset .field .control textarea {border-color: #222;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable {width: 100% !important; left: 0px !important; right: 0px !important; background-color: rgba(233, 233, 233, 0.9); position: fixed !important; top: 0px !important; bottom: 0px !important; z-index: 99; overflow: auto;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable .popup_inner_sec {width: 71% !important; margin: auto; position: fixed; left: 0px; right: 0px; padding: 40px; background-color: #fff; overflow: auto; box-shadow: 0 10px 25px rgba(0,0,0,.5); /*height: 453px !important;*/ border-radius: 4px; top: 0px; bottom: 0px;}
-.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar {position: absolute; right: 15%; top: 11%; z-index: 99;}
+.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar {position: absolute; background:none; border:none; right: 15%; top: 11%; z-index: 99;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button {background: none !important; border: none !important; padding: 0px !important; width: 30px !important; height: 30px !important; text-indent: 0px; overflow: hidden !important;}
-.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button {background: none; border: none; padding: 0px; width: 25px; height: 25px; overflow: hidden; font-size: 20px;}
-.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button:before {content: '\f819'; font-family: 'porto-icons'; display: inline-block;}
+.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button {background: none !important; color: #777777; border: none !important; padding: 0px !important; width: 25px !important; height: 25px !important; overflow: hidden !important; font-size: 20px !important;}
+.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button:before {content: '\f819'; color: #777777; font-family: 'porto-icons'; display: inline-block;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button:hover {color: #777;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable .popup_inner_sec h2 {font-size: 30px; margin-top: 0px; padding-top: 20px; margin-bottom: 16px; color: #000; font-weight: normal;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable .popup_inner_sec p {color: #000; margin-bottom: 16px;}

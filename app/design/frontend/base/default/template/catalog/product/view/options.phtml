@@ -186,8 +186,46 @@
     //]]>
     </script>
     <dl>
+	<?php 
+		$totalopt = count ($_options);
+		$optionscount = 0;
+	?>
     <?php foreach($_options as $_option): ?>
-        <?php echo $this->getOptionHtml($_option) ?>
+        <?php //echo $this->getOptionHtml($_option) ?>
+		<?php if ($optionscount == 12) : ?>
+			<dt><label></label></dt>
+			<dd>
+				<div class="input-box">
+					<input id="advcusoption" type="checkbox" name="advcusoption" value="yes"> Advanced Custom Options
+				</div>
+			</dd>
+			<div class="expand_opts" style="display:none;">
+				<?php echo $this->getOptionHtml($_option) ?>
+				<?php elseif ($optionscount == $totalopt): ?>
+			</div>
+				<?php else: ?>
+				<?php echo $this->getOptionHtml($_option) ?>
+		<?php endif; ?>
+		<?php $optionscount++; ?>
     <?php endforeach; ?>
     </dl>
 <?php endif; ?>
+<script type="text/javascript">
+jQuery(function($)
+{
+    $(document).ready(function()
+	{
+		$('#advcusoption').click(function()
+		{	
+            if ($(this).attr("checked"))
+			{
+                $(".expand_opts").show();
+            }
+			else
+			{
+                $(".expand_opts").hide();
+            }     
+		});
+	});
+});
+</script>
