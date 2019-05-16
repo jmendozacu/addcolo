@@ -1523,6 +1523,7 @@ footer.page-footer .footer .footer-middle > .container{
 	margin-bottom: 20px;
 	margin-top: 0px;
 	font-weight: 600;
+	color:#000;
 }
 .ship-ret-pol-cont-sec p{
 	margin-bottom: 15px;	
@@ -1587,6 +1588,7 @@ footer.page-footer .footer .footer-middle > .container{
 	margin-top: 20px;
 	font-weight: 600;
 	margin-bottom: 5px;
+	color:#000;
 }
 .pro-desc-lined-title-content p{
 	padding: 32px;
@@ -3112,3 +3114,9 @@ input#search {
     padding: 0;
     background: #fcf9f8;
 }
+.catalog-product-view .product-shop.col-md-6 {
+    padding-left: 50px !important;
+}
+/*.catalog-product-view .product-collateral{
+	display: none;
+}*/

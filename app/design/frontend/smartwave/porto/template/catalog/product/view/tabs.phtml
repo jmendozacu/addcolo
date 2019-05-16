@@ -1,5 +1,16 @@
+<div class="info-cus-wrapper">
 <?php
-    $store = Mage::app()->getStore();
+$additional_tabbed = 'additional_tabbed';
+echo $this->getChildHtml($additional_tabbed);
+?>
+</div>
+<?php
+$review_tabbed = 'review_tabbed';
+echo $this->getChildHtml($review_tabbed);
+?>  
+
+<?php
+ /*   $store = Mage::app()->getStore();
     $code  = $store->getCode();
     $helper = Mage::helper("porto");
     $product_id = Mage::registry("current_product")->getId();
@@ -182,4 +193,4 @@
     }
 ?>
 </div>
-<?php endif; ?>
+<?php endif; */ ?>
