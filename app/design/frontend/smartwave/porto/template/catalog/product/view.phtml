@@ -55,6 +55,7 @@
     var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
 </script>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+<div class="sin-pro-med-info-main">
 <div class="product-view acl-nlt-cstm-container <?php echo $product_page_type; ?> <?php if($move_product_tab): ?>moved-tab<?php endif;?> <?php if($product_page_type == 'fullwidth'): ?>fullwidth-row<?php endif; ?>" <?php if($enabled_richsnippets): ?><?php echo $helper_richsnippets->getProductItemscope(); ?><?php endif; ?>>
     <div class="product-essential">
     <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
@@ -161,7 +162,7 @@ if($enable_addtocart_sticky){
                     $product_shop_class = "col-md-3";
                 }
             ?>
-            <div class="product-img-box dsfcsdfdsfd <?php echo $product_img_box_class; ?> <?php echo Mage::getStoreConfig("porto_settings/product_view/thumbnail_image_type", $code); ?>">
+            <div class="product-img-box <?php echo $product_img_box_class; ?> <?php echo Mage::getStoreConfig("porto_settings/product_view/thumbnail_image_type", $code); ?>">
                 <?php echo $this->getChildHtml('media') ?>
             </div>
             <?php else: ?>
@@ -252,7 +253,7 @@ if($enable_addtocart_sticky){
             <?php endif; ?>
             </div>
         <?php endif; ?>
-            <div class="product-shop <?php echo $product_shop_class; ?>">
+            <div class="product-shop product-info-main product_info_cus <?php echo $product_shop_class; ?>">
             <?php if($product_page_type != 'sticky_left_right'): ?>
             <?php if($product_page_type == 'carousel'): ?>
                 <?php echo $this->getChildHtml('addthis_sharetool'); ?>
@@ -337,12 +338,24 @@ if($enable_addtocart_sticky){
                 <?php endif; ?>
             <?php endif; ?>
             <?php endif; ?>
-                <?php if ($_product->getShortDescription()):?>
-                    <div class="short-description <?php if($move_custom_block):?>no-border<?php endif;?>">
-                        <h2><?php echo $this->__('Quick Overview') ?></h2>
-                        <div class="std" <?php if($enabled_richsnippets): ?>itemprop="description"<?php endif; ?>><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
-                    </div>
-                <?php endif;?>
+    <div class="page-title-wrapper product">
+    <h1 class="page-title">
+        <span class="base" data-ui-id="page-title-wrapper" itemprop="name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></span>    </h1>
+    </div>
+    <div class="product-reviews-summary no-rating" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+        <div class="reviews-actions">
+        <a class="action view" href="https://new.addcolo.com/silver-grey-wigs-bob-straight-wavy-2018-summer-best-fashion-colorful-lace-front-wigs.html#reviews">
+            <span itemprop="reviewCount">16</span>&nbsp;
+            <span>Reviews</span>
+        </a>
+        <a class="action add" href="#">Add Your Review</a>
+     </div>
+   </div>
+   <?php if ($_product->getShortDescription()):?>
+   <div class="product attribute overview">
+        <div class="value" itemprop="description"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+   </div>
+   <?php endif;?>
                 <?php if($attr_custom_block_html && $product_page_type == 'carousel'):?>
                     <div class="short-custom-block">
                         <?php echo $attr_custom_block_html; ?>
@@ -368,12 +381,28 @@ if($enable_addtocart_sticky){
                         </div>
                     <?php endif;?>
                 <?php endif; ?>
-                <div class="product-info">
-                    <div <?php if($enabled_richsnippets) echo $helper_richsnippets->getOfferItemscope(); ?>>
+                <div class="product-info-price">
+                    <div class="price-box price-final_price">
+                    <?php if($enabled_richsnippets) echo $helper_richsnippets->getOfferItemscope(); ?>>
                         <?php echo $this->getChildHtml('product_type_data'); ?>
                         <?php echo $this->getTierPriceHtml(); ?>
                         <?php echo $price_properties; ?>
-                    </div>
+
+                   </div>
+
+<div class="product-info-stock-sku">
+            <div class="stock available" title="Availability">
+            <span class="label">Availability:</span>
+            <span>In stock</span>
+        </div>
+    <div class="product attribute sku">
+    <strong class="type">SKU</strong>    <div class="value" itemprop="sku">colorfulwigs007</div>
+</div>
+</div></div>
+
+
+
+                <div class="product-info">
                     <?php echo $this->getChildHtml('extrahint') ?>
                     <?php if(!($product_page_type == 'sticky_left_right' || $product_page_type == 'wide_grid')): ?>
                     <?php if ($this->canEmailToFriend()): ?>
@@ -618,7 +647,49 @@ if($enable_addtocart_sticky){
         </div>
     <?php endif;?>
     <?php $upsell = $this->getChildHtml('upsell_products'); ?>
-    <?php if(!$product_page_type && Mage::getStoreConfig("porto_settings/product_view/move_upsell",$code)) echo $upsell; ?>
+    
+    <?php if($attr_custom_block_html && ($product_page_type == 'fullwidth' || $product_page_type == "sticky_left_right")):?>
+        <div class="fullwidth-custom-block">
+            <?php echo $attr_custom_block_html; ?>
+        </div>
+    <?php endif;?>
+    <?php if($attr_custom_block_html_2 && ($product_page_type == 'carousel' || $product_page_type == 'fullwidth' || $product_page_type == "sticky_left_right")):?>
+        <div class="fullwidth-custom-block <?php echo ($product_page_type == 'carousel')?'fullwidth-row':''; ?>">
+            <?php echo $attr_custom_block_html_2; ?>
+        </div>
+    <?php endif;?>
+    <?php if($product_page_type || !Mage::getStoreConfig("porto_settings/product_view/move_upsell",$code)) echo $upsell; ?>
+</div>
+</div>
+
+<div class="product gal_details_cus"><div class="sin-pro-nlt-fea-row-main desk_view_cus">
+<div class="acl-nlt-cstm-container">
+<div class="sin-pro-nlt-fea-row">
+<div class="sin-pro-nlt-fea-block">
+<div class="sin-pro-nlt-fea-block-inn">
+<div class="sin-pro-nlt-fea-blk-icon sin-pro-nlt-fea-blk-hh"></div>
+<p>100% Human Hair</p>
+</div>
+</div>
+<div class="sin-pro-nlt-fea-block">
+<div class="sin-pro-nlt-fea-block-inn">
+<div class="sin-pro-nlt-fea-blk-icon sin-pro-nlt-fea-blk-ws"></div>
+<p>Free worldwide shipping</p>
+</div>
+</div>
+<div class="sin-pro-nlt-fea-block">
+<div class="sin-pro-nlt-fea-block-inn">
+<div class="sin-pro-nlt-fea-blk-icon sin-pro-nlt-fea-blk-cs"></div>
+<p>24/7 Customer Support</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<?php if(!$product_page_type && Mage::getStoreConfig("porto_settings/product_view/move_upsell",$code)) echo $upsell; ?>
     <?php if($product_page_type == "sticky_right"): ?>
     <div class="product-collateral fullwidth-row">
         <div class="container">
@@ -645,148 +716,4 @@ if($enable_addtocart_sticky){
     <?php else: ?>
     </div>
     <?php endif; ?>
-    <?php if($attr_custom_block_html && ($product_page_type == 'fullwidth' || $product_page_type == "sticky_left_right")):?>
-        <div class="fullwidth-custom-block">
-            <?php echo $attr_custom_block_html; ?>
-        </div>
-    <?php endif;?>
-    <?php if($attr_custom_block_html_2 && ($product_page_type == 'carousel' || $product_page_type == 'fullwidth' || $product_page_type == "sticky_left_right")):?>
-        <div class="fullwidth-custom-block <?php echo ($product_page_type == 'carousel')?'fullwidth-row':''; ?>">
-            <?php echo $attr_custom_block_html_2; ?>
-        </div>
-    <?php endif;?>
-    <?php if($product_page_type || !Mage::getStoreConfig("porto_settings/product_view/move_upsell",$code)) echo $upsell; ?>
-</div>
-<script type="text/javascript">
-    jQuery(function($){
-        $("body.quickview-index-view .no-rating a, body.quickview-index-view .ratings a").off('click').on("click",function(e){
-            window.parent.location.href = $(this).attr("href");
-            window.parent.jQuery.fancybox.close();
-        });
-    <?php
-    if($enable_addtocart_sticky){
-    ?>
-        p_scrolled = false;
-        $(window).scroll(function(){
-            if(400<$(window).scrollTop() && !p_scrolled){
-                $('.sticky-product').removeClass("hide");
-                p_scrolled = true;
-            }
-            if(400>=$(window).scrollTop() && p_scrolled){
-                $('.sticky-product').addClass("hide");
-                p_scrolled = false;
-            }
-        });
-    <?php
-    }
-    ?>
-    <?php
-    if((!$product_page_type && $move_product_tab) || $product_page_type == 'fullwidth'){
-    ?>
-        $(".product-tabs").appendTo($(".product-shop"));
-    <?php
-    }
-    ?>
-    });
-<?php if($product_page_type == 'sticky_right' || $product_page_type == 'sticky_left_right'): ?>
-    jQuery(function($){
-        var product_info_top = 0;
-        var product_image_box_pos = $(".product-view .product-img-box").offset().top;
-        if($(window).innerWidth() >= 768) {
-            $(".product-view .product-shop").each(function(){
-                if(($(window).scrollTop() > product_image_box_pos - 50) && (product_image_box_pos + $(".product-view .product-img-box").outerHeight()) > ($(window).scrollTop() + $(this).outerHeight() + 50)) {
-                    product_info_top = $(window).scrollTop() - product_image_box_pos + 50;
-                    $(this).css('top',product_info_top + 'px');
-                } else if ($(window).scrollTop() < product_image_box_pos) {
-                    product_info_top = 0;
-                    $(this).css('top',product_info_top + 'px');
-                }
-            });
-        } else {
-            product_info_top = 0;
-            $(".product-view .product-shop").css('top',product_info_top + 'px');
-        }
-        $(window).scroll(function(){
-            product_image_box_pos = $(".product-view .product-img-box").offset().top;
-            if($(window).innerWidth() >= 768) {
-                $(".product-view .product-shop").each(function(){
-                    if(($(window).scrollTop() > product_image_box_pos - 50) && (product_image_box_pos + $(".product-view .product-img-box").outerHeight()) > ($(window).scrollTop() + $(this).outerHeight() + 50)) {
-                        product_info_top = $(window).scrollTop() - product_image_box_pos + 50;
-                        $(this).css('top',product_info_top + 'px');
-                    } else if ($(window).scrollTop() < product_image_box_pos) {
-                        product_info_top = 0;
-                        $(this).css('top',product_info_top + 'px');
-                    }
-                });
-            } else {
-                product_info_top = 0;
-                $(".product-view .product-shop").css('top',product_info_top + 'px');
-            }
-        });
-        $(window).resize(function(){
-            product_image_box_pos = $(".product-view .product-img-box").offset().top;
-            if($(window).innerWidth() >= 768) {
-                $(".product-view .product-shop").each(function(){
-                    if(($(window).scrollTop() > product_image_box_pos - 50) && (product_image_box_pos + $(".product-view .product-img-box").outerHeight()) > ($(window).scrollTop() + $(this).outerHeight() + 50)) {
-                        product_info_top = $(window).scrollTop() - product_image_box_pos + 50;
-                        $(this).css('top',product_info_top + 'px');
-                    } else if ($(window).scrollTop() < product_image_box_pos) {
-                        product_info_top = 0;
-                        $(this).css('top',product_info_top + 'px');
-                    }
-                });
-            } else {
-                product_info_top = 0;
-                $(".product-view .product-shop").css('top',product_info_top + 'px');
-            }
-        });
-    });
-<?php endif; ?>
-<?php if($product_page_type == 'fullwidth'): ?>
-    jQuery(function($){
-        var product_image_box_top = 0;
-        var product_info_pos = $(".product-view .product-shop").offset().top;
-        $(window).scroll(function(){
-            product_info_pos = $(".product-view .product-shop").offset().top;
-            if($(window).innerWidth() >= 768) {
-                $(".product-view .product-img-box").each(function(){
-                    if(($(window).scrollTop() > product_info_pos - 50) && (product_info_pos + $(".product-view .product-shop").outerHeight()) > ($(window).scrollTop() + $(this).outerHeight() + 50)) {
-                        product_image_box_top = $(window).scrollTop() - product_info_pos + 50;
-                        $(this).css('top',product_image_box_top + 'px');
-                    } else if ($(window).scrollTop() < product_info_pos) {
-                        product_image_box_top = 0;
-                        $(this).css('top',product_image_box_top + 'px');
-                    }
-                });
-            } else {
-                product_image_box_top = 0;
-                $(".product-view .product-img-box").css('top',product_image_box_top + 'px');
-            }
-        });
-        $(window).resize(function(){
-            product_info_pos = $(".product-view .product-shop").offset().top;
-            if($(window).innerWidth() >= 768) {
-                $(".product-view .product-img-box").each(function(){
-                    if(($(window).scrollTop() > product_info_pos - 50) && (product_info_pos + $(".product-view .product-shop").outerHeight()) > ($(window).scrollTop() + $(this).outerHeight() + 50)) {
-                        product_image_box_top = $(window).scrollTop() - product_info_pos + 50;
-                        $(this).css('top',product_image_box_top + 'px');
-                    } else if ($(window).scrollTop() < product_info_pos) {
-                        product_image_box_top = 0;
-                        $(this).css('top',product_image_box_top + 'px');
-                    }
-                });
-            } else {
-                product_image_box_top = 0;
-                $(".product-view .product-img-box").css('top',product_image_box_top + 'px');
-            }
-        });
-    });
-<?php endif; ?>
-</script>
-<style type="text/css">
-<?php if($product_page_type == "sticky_right" || $product_page_type == "sticky_left_right" || $product_page_type == "wide_grid"): ?>
-    .bottom-container {
-        background-color: transparent;
-    }
-<?php endif; ?>
-</style>
+
