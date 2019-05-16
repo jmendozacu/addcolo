@@ -28,7 +28,7 @@
     $attr_custom_block_html_2 = $_processor->filter($_product->getData('custom_block_2'));
     $custom_block_html = "";
     $custom_block_id = "";
-    $custom_block_tab_html = "";
+	$custom_block_tab_html = "";
     if(!$product_page_type) {
         if(!$custom_block_html)
             $custom_block_id = Mage::getStoreConfig("porto_settings/product_view/custom_block_id",$code);
@@ -125,11 +125,11 @@ if($enable_addtocart_sticky){
                         </span>
                     <?php endif; ?>
                     <?php endif; ?>
-                    <?php if ($_product->isAvailable()): ?>
-                        <p class="availability in-stock"><span>(<?php echo $this->__('In stock') ?>)</span></p>
-                    <?php else: ?>
-                        <p class="availability out-of-stock"><span>(<?php echo $this->__('Out of stock') ?>)</span></p>
-                    <?php endif; ?>
+					<?php if ($_product->isAvailable()): ?>
+						<p class="availability in-stock"><span>(<?php echo $this->__('In stock') ?>)</span></p>
+					<?php else: ?>
+						<p class="availability out-of-stock"><span>(<?php echo $this->__('Out of stock') ?>)</span></p>
+					<?php endif; ?>
                 </div>
                 <?php if($_product->isSaleable()): ?>
                 <?php $buttonTitle = $this->__('Add to Cart'); ?>
@@ -381,28 +381,15 @@ if($enable_addtocart_sticky){
                         </div>
                     <?php endif;?>
                 <?php endif; ?>
-                <div class="product-info-price">
-                    <div class="price-box price-final_price">
-                    <?php if($enabled_richsnippets) echo $helper_richsnippets->getOfferItemscope(); ?>>
+                <div class="product-info">
+                    <div <?php if($enabled_richsnippets) echo $helper_richsnippets->getOfferItemscope(); ?>>
                         <?php echo $this->getChildHtml('product_type_data'); ?>
                         <?php echo $this->getTierPriceHtml(); ?>
                         <?php echo $price_properties; ?>
-
-                   </div>
-
-<div class="product-info-stock-sku">
-            <div class="stock available" title="Availability">
-            <span class="label">Availability:</span>
-            <span>In stock</span>
-        </div>
-    <div class="product attribute sku">
-    <strong class="type">SKU</strong>    <div class="value" itemprop="sku">colorfulwigs007</div>
-</div>
-</div></div>
-
-
-
-                <div class="product-info">
+                    </div>
+                    <div class="product attribute sku">
+                     <strong class="type">SKU</strong>    
+                     <div class="value" itemprop="sku"><?php echo $_product->getSku(); ?></div></div>
                     <?php echo $this->getChildHtml('extrahint') ?>
                     <?php if(!($product_page_type == 'sticky_left_right' || $product_page_type == 'wide_grid')): ?>
                     <?php if ($this->canEmailToFriend()): ?>
@@ -511,9 +498,9 @@ if($enable_addtocart_sticky){
                                     if(window.parent.jQuery('.fixed-header .mini-cart')){
                                         window.parent.jQuery('.fixed-header .mini-cart').replaceWith(data.toplink);
                                     }
-                                    if(window.parent.jQuery('.sticky-header .mini-cart')){
-                                        window.parent.jQuery('.sticky-header .mini-cart').replaceWith(data.toplink);
-                                    }
+									if(window.parent.jQuery('.sticky-header .mini-cart')){
+										window.parent.jQuery('.sticky-header .mini-cart').replaceWith(data.toplink);
+									}
                                     if(window.parent.jQuery('.col-right .block.block-cart')){
                                         window.parent.jQuery('.col-right .block.block-cart').replaceWith(data.cart_sidebar);
                                     }
@@ -541,9 +528,9 @@ if($enable_addtocart_sticky){
                                     if(jQuery('.fixed-header .mini-cart')){
                                         jQuery('.fixed-header .mini-cart').replaceWith(data.toplink);
                                     }
-                                    if(jQuery('.sticky-header .mini-cart')){
-                                        jQuery('.sticky-header .mini-cart').replaceWith(data.toplink);
-                                    }
+									if(jQuery('.sticky-header .mini-cart')){
+										jQuery('.sticky-header .mini-cart').replaceWith(data.toplink);
+									}
                                     if(jQuery('.col-right .block.block-cart')){
                                         jQuery('.col-right .block.block-cart').replaceWith(data.cart_sidebar);
                                     }
