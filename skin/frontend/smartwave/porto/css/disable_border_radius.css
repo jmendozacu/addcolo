@@ -27,7 +27,7 @@ input, select, textarea, button,
     .recent-posts .item .post-image, .recent-posts .item .post-image img,
     .menu.side-menu>li.menu-item-has-children .nav-sublist-dropdown .container ul .menu-item-has-children .nav-sublist,.form-wrap,#form-validate,#login-form,a.at300b .at4-icon, a.at300m .at4-icon,
     .prev-next-products .product-nav .product-pop, input.input-text, select, textarea, body.boxed .header-container .top-links-container,.main-nav .menu >li .nav-sublist-dropdown .container ul .menu-item-has-children .nav-sublist, .error-msg, .success-msg, .note-msg, .notice-msg
-    {border-radius:0}
+    {/*border-radius:0*/}
 
     .header .form-search #search,
     .header .form-search,

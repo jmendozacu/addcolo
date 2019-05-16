@@ -1375,6 +1375,7 @@ footer.page-footer .footer .footer-middle > .container{
 .faqprd_cus #product-review-container .review-list .block-title strong{
 	font-weight: 400;
 	color: #070000;
+	font-size:25px;
 }
 .faqprd_cus #reviews .get-points .price-reviews {
     font-weight: bold;
@@ -1405,10 +1406,10 @@ footer.page-footer .footer .footer-middle > .container{
 .review_form_popup fieldset.fieldset.review-fieldset .field .control input, .review_form_popup fieldset.fieldset.review-fieldset .field .control textarea {border-color: #222;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable {width: 100% !important; left: 0px !important; right: 0px !important; background-color: rgba(233, 233, 233, 0.9); position: fixed !important; top: 0px !important; bottom: 0px !important; z-index: 99; overflow: auto;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable .popup_inner_sec {width: 71% !important; margin: auto; position: fixed; left: 0px; right: 0px; padding: 40px; background-color: #fff; overflow: auto; box-shadow: 0 10px 25px rgba(0,0,0,.5); /*height: 453px !important;*/ border-radius: 4px; top: 0px; bottom: 0px;}
-.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar {position: absolute; right: 15%; top: 11%; z-index: 99;}
+.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar {position: absolute; background:none; border:none; right: 15%; top: 11%; z-index: 99;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button {background: none !important; border: none !important; padding: 0px !important; width: 30px !important; height: 30px !important; text-indent: 0px; overflow: hidden !important;}
-.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button {background: none; border: none; padding: 0px; width: 25px; height: 25px; overflow: hidden; font-size: 20px;}
-.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button:before {content: '\f819'; font-family: 'porto-icons'; display: inline-block;}
+.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button {background: none !important; color: #777777; border: none !important; padding: 0px !important; width: 25px !important; height: 25px !important; overflow: hidden !important; font-size: 20px !important;}
+.catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button:before {content: '\f819'; color: #777777; font-family: 'porto-icons'; display: inline-block;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable .ui-dialog-titlebar button:hover {color: #777;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable .popup_inner_sec h2 {font-size: 30px; margin-top: 0px; padding-top: 20px; margin-bottom: 16px; color: #000; font-weight: normal;}
 .catalog-product-view .ui-dialog.ui-widget.ui-draggable .popup_inner_sec p {color: #000; margin-bottom: 16px;}
@@ -1523,6 +1524,7 @@ footer.page-footer .footer .footer-middle > .container{
 	margin-bottom: 20px;
 	margin-top: 0px;
 	font-weight: 600;
+	color:#000;
 }
 .ship-ret-pol-cont-sec p{
 	margin-bottom: 15px;	
@@ -1587,6 +1589,7 @@ footer.page-footer .footer .footer-middle > .container{
 	margin-top: 20px;
 	font-weight: 600;
 	margin-bottom: 5px;
+	color:#000;
 }
 .pro-desc-lined-title-content p{
 	padding: 32px;
@@ -3111,4 +3114,130 @@ input#search {
 .catalog-product-view .main-container.col1-layout {
     padding: 0;
     background: #fcf9f8;
+}
+.catalog-product-view .product-shop.col-md-6 {
+    padding-left: 50px !important;
+}
+.catalog-product-view p.availability.in-stock {
+    float: right;
+}
+.catalog-product-view .sin-pro-med-info-main .product-info-main.product_info_cus .product-info span.price {
+    color: #e2385c;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: arial;
+}
+.catalog-product-view .sin-pro-med-info-main .product.attribute.sku {
+    float: right;
+}
+.catalog-product-view .sin-pro-med-info-main .price-box {
+    margin: 0 !important;
+}
+.catalog-product-view .sin-pro-med-info-main .product-view .product-options dt {
+    width: 35%;
+    display: inline-block;
+    margin-left: -2px;
+    margin-right: -2px;
+    color: #000000;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 600;
+    vertical-align: top;
+    padding-top: 0px;
+    padding-right: 5px;
+    line-height: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.catalog-product-view .sin-pro-med-info-main .product-view .product-options dt label {
+    text-transform: capitalize;
+    color: #000;
+    font-size: 14px;
+}
+.catalog-product-view .sin-pro-med-info-main .product-view .product-options dd {
+    float: left;
+    width: 65%;
+    display: inline-block;
+    margin-left: -2px;
+    margin-right: -2px;
+    vertical-align: top;
+}
+.catalog-product-view .sin-pro-med-info-main .product-options dd select {
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid #8b8787;
+    height: 28px;
+    background-color: rgba(0,0,0,0);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.catalog-product-view .sin-pro-med-info-main .add-to-cart label {
+    display: block;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 12px 0px;
+    margin-right: 10px;
+    width: 25%;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.catalog-product-view .sin-pro-med-info-main .qty-holder {
+    width: 160px;
+}
+.catalog-product-view .sin-pro-med-info-main .add-to-cart .qty {
+    border-color: #b9b7b6;
+    border-radius: 0px;
+    width: 140px !important;
+    font-size: 19px;
+    color: #000;
+    font-family: arial;
+}
+.catalog-product-view .sin-pro-med-info-main a.qty_inc:hover,.catalog-product-view .sin-pro-med-info-main a.qty_dec:hover {
+    color: red;
+}
+.catalog-product-view .sin-pro-med-info-main .add-to-cart button.button {
+    background: #373434/*eb355c*/;
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: arial;
+    color: #fff;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    text-transform: uppercase;
+    padding: 9px 16px 8px;
+    height: 43px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    border-color: #373434;
+    margin-top: 25px;
+    width: 200px;
+}
+.catalog-product-view .sin-pro-med-info-main button.button.btn-cart span {
+    background: none;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: arial;
+}
+.catalog-product-view .sin-pro-med-info-main ul.add-to-links {
+    display: none !important;
+}
+.catalog-product-view .rating-summary .rating-result > span:before, .review-control-vote label:before {
+    color: #575f68;
+}
+.catalog-product-view .review-title {
+    font-size: 16px;
+}
+.catalog-product-view .ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle {
+    background: none;
+    border: none;
+}
+.catalog-product-view span.ui-button-icon.ui-icon.ui-icon-closethick {
+    background-image: inherit;
 }
