@@ -620,10 +620,12 @@ footer.page-footer .footer .footer-middle > .container{
 	font-size: 19px;
 	margin: 0 0 25px 0;
 	line-height: 23px;
+	text-align: left;
 }
 .footer_mid_cus ul.nl-footer-link-list li{
 	display: block;
 	margin-top: 20px;
+	text-align: left;
 }
 .footer_mid_cus ul.nl-footer-link-list li a{
 	font-family: arial;
@@ -640,6 +642,10 @@ footer.page-footer .footer .footer-middle > .container{
 	font-size: 19px;
 	margin: 0 0 25px 0;
 	line-height: 23px;
+}
+.acl-nlt-footer-right-sec {
+    text-align: left;
+    padding-left: 46px;
 }
 .footer-middle .acl-nlt-footer-right-news .block.newsletter .form.subscribe{
 	display: block;
