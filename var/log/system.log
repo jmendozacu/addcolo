@@ -1,0 +1,45 @@
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: sticky_header_mobile  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 146
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: custom_style_2  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 275
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: sticky_header_mobile  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 146
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: custom_style_2  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 275
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: sticky_header_mobile  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 146
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: custom_style_2  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 275
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: header_menu_classicmenu_bordercolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 834
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_bgcolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 935
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_color  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 942
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: header_menu_classicmenu_bordercolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 834
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_bgcolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 935
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_color  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 942
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: header_menu_classicmenu_bordercolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 834
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_bgcolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 935
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_color  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 942
+2019-05-18T08:36:05+00:00 DEBUG (7): Security problem: filterproducts/latest_home_list has not been whitelisted.
+2019-05-18T08:36:06+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:41:15+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-18T09:50:51+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:50:59+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:07+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:15+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:21+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:27+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:34+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:39+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:52+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:58+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:04+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:12+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:19+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:26+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:32+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:37+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:53:26+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:53:33+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:53:40+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:53:46+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:53:50+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:01:41+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:01:45+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:01:49+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:01:53+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:01:57+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:02:05+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
