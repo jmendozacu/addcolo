@@ -99,3 +99,4 @@
 2019-05-18T09:49:17+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
 2019-05-18T10:01:31+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
 2019-05-18T10:01:37+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T13:25:45+00:00 ERR (3): Recoverable Error: Object of class Mage_Catalog_Helper_Output could not be converted to string  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 35
