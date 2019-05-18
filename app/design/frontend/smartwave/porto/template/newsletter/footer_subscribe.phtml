@@ -8,24 +8,43 @@
     $code  = $store->getCode();
     $footer = Mage::getStoreConfig('porto_settings/footer',$code);
 ?>
-<div class="block block-subscribe">
-    <div class="block-title">
-        <strong><span><?php echo $footer['footer_newsletter_title']; ?></span></strong>
-    </div>
-    <form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="footer-newsletter-validate-detail" onsubmit="setNewsletterCookie()">
-        <div class="block-content">
-            <p><?php echo $footer['footer_newsletter']; ?></p>
-            <div class="input-box">
-                <p class="label"><?php echo $this->__('Enter your e-mail Address'); ?></p>
-                <input type="text" name="email" id="newsletter_footer" title="<?php echo $this->__('Sign up for our newsletter') ?>" class="input-text required-entry validate-email" />
-                <button type="submit" title="<?php echo $this->__('Submit') ?>" class="button"><span><span><?php echo $this->__('Submit') ?></span></span></button>
-                <div class="clearer"></div>
+<div class="acl-nlt-footer-right-sec">
+    <h3>Sign up now to get the latest news, deals and more.</h3>
+    <div class="acl-nlt-footer-right-sec-inn">
+        <div class="acl-nlt-footer-right-news">
+            <div class="block newsletter">
+                <div class="title"><strong><?php echo $this->__('Newsletter') ?></strong></div>
+                <div class="content">
+                    <form class="form subscribe" action="<?php echo $this->getFormActionUrl() ?>" method="post" id="footer-newsletter-validate-detail" onsubmit="setNewsletterCookie()">
+                        <div class="field newsletter">
+                            <label class="label" for="newsletter"><span>Sign Up for Our Newsletter:</span></label>
+                            <div class="control">
+                                <input type="email" name="email" id="newsletter" placeholder="Your Email" class="input-text required-entry validate-email" />
+                                <script type="text/javascript">
+                                    //<![CDATA[
+                                        var footernewsletterSubscriberFormDetail = new VarienForm('footer-newsletter-validate-detail');
+                                    //]]>
+                                </script>
+                            </div>
+                            <div class="actions">
+                                <button class="action subscribe primary" title="<?php echo $this->__('Send') ?>" type="submit">
+                                    <span><?php echo $this->__('Send') ?></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
+            <p>No Spam. Your email is kept 100% private.</p>
         </div>
-    </form>
-    <script type="text/javascript">
-    //<![CDATA[
-        var footernewsletterSubscriberFormDetail = new VarienForm('footer-newsletter-validate-detail');
-    //]]>
-    </script>
+        <div class="acl-nlt-footer-right-social">
+            <ul>
+                <li class="acl-nlt-footer-fb"><a href="https://www.facebook.com/addcolohair/">Fb</a></li>
+                <li class="acl-nlt-footer-tw"><a href="https://twitter.com/addcolohair">tw</a></li>
+                <li class="acl-nlt-footer-pin"><a href="https://www.pinterest.com/addcolo/">pin</a></li>
+                <li class="acl-nlt-footer-ins"><a href="https://www.instagram.com/addcolohair/">ins</a></li>
+                <li class="acl-nlt-footer-yt"><a href="https://www.youtube.com/channel/UCtwkOlgOwf1FGEGKQ5gDhrg">yt</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
