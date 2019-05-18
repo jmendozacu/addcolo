@@ -33,33 +33,151 @@
 <?php
     $_helper = $this->helper('catalog/output');
     $_product = $this->getProduct();
-    $video_array   = array('video','video2','video3','video4');
-    $feature_array = array('features');
+    $feature_array = array('feature');
     $product_id = Mage::registry("current_product")->getId();
 ?>
+<?php 
+if($_product->getData('video') || $_product->getData('video1') || $_product->getData('video2') || $_product->getData('video3') || ($_product->getData('image1') && $_product->getData('image1') != "no_selection") || ($_product->getData('image2') && $_product->getData('image2') != "no_selection") || ($_product->getData('image3') && $_product->getData('image3') != "no_selection") || ($_product->getData('image4') && $_product->getData('image4') != "no_selection")
+   || ($_product->getData('image5') && $_product->getData('image5') != "no_selection") || ($_product->getData('image6') && $_product->getData('image6') != "no_selection") || ($_product->getData('image7') && $_product->getData('image7') != "no_selection") || ($_product->getData('image8') && $_product->getData('image8') != "no_selection")){
+?>
+
 <div class="customer-view">
-<div class="header-view">
-        <h3>Customer Show</h3>
-        <span>Get inspired by how other customers have styled their hair.</span>
-        <?php if($_additional = $this->getAdditionalData()): ?>
-<?php foreach ($_additional as $_data): ?>
+  <div class="header-view">
+    <h3>Customer Show</h3>
+    <span>Get inspired by how other customers have styled their hair.</span>
+  </div>
+  
+  <?php
+    if($_product->getData('video')){
+  ?>
+      <div class="sub-view"><?php echo $_product->getData('video');?></div>
+  <?php
+    }
+  ?>
+  <?php
+    if($_product->getData('video1')){
+  ?>
+      <div class="sub-view"><?php echo $_product->getData('video1');?></div>
+  <?php
+    }
+  ?>
+  <?php
+    if($_product->getData('video2')){
+  ?>
+      <div class="sub-view"><?php echo $_product->getData('video2');?></div>
+  <?php
+    }
+  ?>
+  <?php
+    if($_product->getData('video3')){
+  ?>
+      <div class="sub-view"><?php echo $_product->getData('video3');?></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image1') && $_product->getData('image1') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image1');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image2') && $_product->getData('image2') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image2');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image3') && $_product->getData('image3') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image3');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image4') && $_product->getData('image4') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image4');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image5') && $_product->getData('image5') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image5');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image6') && $_product->getData('image6') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image6');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image7') && $_product->getData('image7') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image7');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image8') && $_product->getData('image8') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image8');?>" ></div>
+  <?php
+    }
+  ?>
 
-<?php    if (in_array($this->escapeHtml($this->__($_data['code'])), $video_array)){  ?>
-<div class="sub-view <?php echo $this->escapeHtml($this->__($_data['code'])); ?>"><?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></div>
-<?php }else ?>
-<?php endforeach; ?>
-<?php endif;?> 
-
-
-<?php
-$product = Mage::getModel('catalog/product')->load($product_id);
- ?>
- <?php foreach ($product->getMediaGalleryImages() as $image) :?>
-<div class="sub-view"><img src="<?php echo Mage::helper('catalog/image')->init($product, 'image', $image->getFile())->resize(288, 288); ?>" alt="<?php echo $product->getName()?>" /></div>
-<?php endforeach; ?>
-</div>   
 </div>
+
+<?php 
+}
+?>
+
 <div class="tabpro custom_colo_tabs">
+   <?php
+$captitle =  'Cap Construction';
+$categoryIds = $_product->getCategoryIds();
+
+foreach($categoryIds as $id) {
+ if($id=="3")
+  {
+    $colortab = 'color-tab3';
+    $faqtab = 'faq-tab3';
+    $captab = 'construction-tab3'; 
+  }
+  elseif($id=="4")
+   {
+    $colortab = 'color-tab4';
+    $faqtab = 'faq-tab4';
+    $captab = 'construction-tab4'; 
+    $captitle = 'MAINTENANCE';
+  }
+  elseif($id=="5")
+   {
+    $colortab = 'color-tab5';
+    $faqtab = 'faq-tab5';
+    $captab = 'construction-tab5'; 
+    $captitle =  'MAINTENANCE';
+  }
+  else{
+    
+  }
+}
+
+ ?>
 <ul id="tab01" class="tab">
         <li class="current" onclick="openCity(event, 'London')" id="defaultOpen">Description</li>
         <li class="" onclick="openCity(event, 'Paris')">Color</li>
@@ -69,70 +187,43 @@ $product = Mage::getModel('catalog/product')->load($product_id);
 <div id="productcontent">
    <div id="London" class="tabcontent">
      <ul class="content" style="display: block;">
-<?php if($_additional = $this->getAdditionalData()): ?>
-<?php foreach ($_additional as $_data): ?>
-
-<?php    if (in_array($this->escapeHtml($this->__($_data['code'])), $feature_array)){  ?>
-<?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>
-<?php }else ?>
-<?php endforeach; ?>
-<?php endif;?> 
+<?php echo $_product->getResource()->getAttribute('feature')->getFrontend()->getValue($_product); ?>
      </ul>
 </div>
 <div id="Paris" class="tabcontent">
   <ul class="content" style="display: block;"><div class="prd_color_img">
-      <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('color-tab')->toHtml();?>
+      <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($colortab)->toHtml() ?>
   </div></ul>
 </div>
 
 <div id="Tokyo" class="tabcontent">
   <ul class="content" style="display: block;">
-    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('cap-cons')->toHtml();?>
+    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($captab)->toHtml() ?>
   </ul>
 </div>
 </div>    
 </div>
 <div class="ship-ret-pol-cont-sec-out">
 <div class="ship-ret-pol-cont-sec">
-   <div class="ship-pro-pol-cont-sec">
-    <?php if($_additional = $this->getAdditionalData()): ?>
-    <?php foreach ($_additional as $_data): ?>
-    <?php    if($this->escapeHtml($this->__($_data['code']) == 'processing_and_shipping')){  ?>
-    <?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>
-    <?php }else ?>
-    <?php endforeach; ?>
-   <?php endif;?> 
+   <div class="ship-pro-pol-cont-sec"> 
+   <?php echo $_product->getResource()->getAttribute('processing_and_shipping')->getFrontend()->getValue($_product); ?>
    </div>
    <div class="ex-ret-pol-cont-sec">    
-    <?php if($_additional = $this->getAdditionalData()): ?>
-    <?php foreach ($_additional as $_data): ?>
-    <?php    if($this->escapeHtml($this->__($_data['code']) == 'exchange')){  ?>
-    <?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>
-    <?php }else ?>
-    <?php endforeach; ?>
-   <?php endif;?>     
+    <?php echo $_product->getResource()->getAttribute('exchange')->getFrontend()->getValue($_product); ?>    
    </div>
 </div>
 
 <div class="pro-desc-cir-img-con-sec">
-    <?php if($_additional = $this->getAdditionalData()): ?>
-    <?php foreach ($_additional as $_data): ?>
-    <?php    if($this->escapeHtml($this->__($_data['code']) == 'new_offer')){  ?>
-    <?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>
-    <?php }else ?>
-    <?php endforeach; ?>
-   <?php endif;?>
+    <?php echo $_product->getResource()->getAttribute('new_offer')->getFrontend()->getValue($_product); ?>
 </div>
 <div class="pro-desc-lined-title-content">
-    <?php if($_additional = $this->getAdditionalData()): ?>
-    <?php foreach ($_additional as $_data): ?>
-    <?php    if($this->escapeHtml($this->__($_data['code']) == 'lac_front_wig')){  ?>
-    <?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>
-    <?php }else ?>
-    <?php endforeach; ?>
-   <?php endif;?>  
+    <?php echo $_product->getResource()->getAttribute('lace_front_wig')->getFrontend()->getValue($_product); ?>  
 </div>
 </div>
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($faqtab)->toHtml() ?>
+
+
+
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;

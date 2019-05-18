@@ -1667,7 +1667,7 @@ ul.content .table-data-sheet tr td:first-child{
 	max-width: 1210px;
 	padding: 15px;
 	margin: auto;
-	top: 25%;
+	top: 18%;
 	transform: translate(0,-50%);
 	-moz-transform: translate(0,-50%);
 	-webkit-transform: translate(0,-50%);
@@ -1691,6 +1691,7 @@ ul.content .table-data-sheet tr td:first-child{
 	font-weight: 400;
 	margin: 0 0 20px 0;
 	color: #000000;
+	text-align: left;
 }
 .add-nlt-tp-banner-text-blk p{
 	font-size: 16px;
