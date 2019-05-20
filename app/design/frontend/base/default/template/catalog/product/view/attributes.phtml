@@ -33,33 +33,151 @@
 <?php
     $_helper = $this->helper('catalog/output');
     $_product = $this->getProduct();
-    $video_array   = array('video','video2','video3','video4');
-    $feature_array = array('features');
+    $feature_array = array('feature');
     $product_id = Mage::registry("current_product")->getId();
 ?>
+<?php 
+if($_product->getData('video') || $_product->getData('video1') || $_product->getData('video2') || $_product->getData('video3') || ($_product->getData('image1') && $_product->getData('image1') != "no_selection") || ($_product->getData('image2') && $_product->getData('image2') != "no_selection") || ($_product->getData('image3') && $_product->getData('image3') != "no_selection") || ($_product->getData('image4') && $_product->getData('image4') != "no_selection")
+   || ($_product->getData('image5') && $_product->getData('image5') != "no_selection") || ($_product->getData('image6') && $_product->getData('image6') != "no_selection") || ($_product->getData('image7') && $_product->getData('image7') != "no_selection") || ($_product->getData('image8') && $_product->getData('image8') != "no_selection")){
+?>
+
 <div class="customer-view">
-<div class="header-view">
-        <h3>Customer Show</h3>
-        <span>Get inspired by how other customers have styled their hair.</span>
-        <?php if($_additional = $this->getAdditionalData()): ?>
-<?php foreach ($_additional as $_data): ?>
+  <div class="header-view">
+    <h3>Customer Show</h3>
+    <span>Get inspired by how other customers have styled their hair.</span>
+  </div>
+  
+  <?php
+    if($_product->getData('video')){
+  ?>
+      <div class="sub-view"><?php echo $_product->getData('video');?></div>
+  <?php
+    }
+  ?>
+  <?php
+    if($_product->getData('video1')){
+  ?>
+      <div class="sub-view"><?php echo $_product->getData('video1');?></div>
+  <?php
+    }
+  ?>
+  <?php
+    if($_product->getData('video2')){
+  ?>
+      <div class="sub-view"><?php echo $_product->getData('video2');?></div>
+  <?php
+    }
+  ?>
+  <?php
+    if($_product->getData('video3')){
+  ?>
+      <div class="sub-view"><?php echo $_product->getData('video3');?></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image1') && $_product->getData('image1') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image1');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image2') && $_product->getData('image2') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image2');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image3') && $_product->getData('image3') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image3');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image4') && $_product->getData('image4') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image4');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image5') && $_product->getData('image5') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image5');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image6') && $_product->getData('image6') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image6');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image7') && $_product->getData('image7') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image7');?>" ></div>
+  <?php
+    }
+  ?>
+  
+  <?php
+    if($_product->getData('image8') && $_product->getData('image8') != "no_selection"){
+  ?>
+      <div class="sub-view"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."catalog/product".$_product->getData('image8');?>" ></div>
+  <?php
+    }
+  ?>
 
-<?php    if (in_array($this->escapeHtml($this->__($_data['code'])), $video_array)){  ?>
-<div class="sub-view <?php echo $this->escapeHtml($this->__($_data['code'])); ?>"><?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></div>
-<?php }else ?>
-<?php endforeach; ?>
-<?php endif;?> 
-
-
-<?php
-$product = Mage::getModel('catalog/product')->load($product_id);
- ?>
- <?php foreach ($product->getMediaGalleryImages() as $image) :?>
-<div class="sub-view"><img src="<?php echo Mage::helper('catalog/image')->init($product, 'image', $image->getFile())->resize(288, 288); ?>" alt="<?php echo $product->getName()?>" /></div>
-<?php endforeach; ?>
-</div>   
 </div>
+
+<?php 
+}
+?>
+
 <div class="tabpro custom_colo_tabs">
+   <?php
+$captitle =  'Cap Construction';
+$categoryIds = $_product->getCategoryIds();
+
+foreach($categoryIds as $id) {
+ if($id=="3")
+  {
+    $colortab = 'color-tab3';
+    $faqtab = 'faq-tab3';
+    $captab = 'construction-tab3'; 
+  }
+  elseif($id=="4")
+   {
+    $colortab = 'color-tab4';
+    $faqtab = 'faq-tab4';
+    $captab = 'construction-tab4'; 
+    $captitle = 'MAINTENANCE';
+  }
+  elseif($id=="5")
+   {
+    $colortab = 'color-tab5';
+    $faqtab = 'faq-tab5';
+    $captab = 'construction-tab5'; 
+    $captitle =  'MAINTENANCE';
+  }
+  else{
+    
+  }
+}
+
+ ?>
 <ul id="tab01" class="tab">
         <li class="current" onclick="openCity(event, 'London')" id="defaultOpen">Description</li>
         <li class="" onclick="openCity(event, 'Paris')">Color</li>
@@ -69,70 +187,43 @@ $product = Mage::getModel('catalog/product')->load($product_id);
 <div id="productcontent">
    <div id="London" class="tabcontent">
      <ul class="content" style="display: block;">
-<?php if($_additional = $this->getAdditionalData()): ?>
-<?php foreach ($_additional as $_data): ?>
-
-<?php    if (in_array($this->escapeHtml($this->__($_data['code'])), $feature_array)){  ?>
-<?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>
-<?php }else ?>
-<?php endforeach; ?>
-<?php endif;?> 
+<?php echo $_product->getResource()->getAttribute('feature')->getFrontend()->getValue($_product); ?>
      </ul>
 </div>
 <div id="Paris" class="tabcontent">
   <ul class="content" style="display: block;"><div class="prd_color_img">
-      <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('color-tab')->toHtml();?>
+      <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($colortab)->toHtml() ?>
   </div></ul>
 </div>
 
 <div id="Tokyo" class="tabcontent">
   <ul class="content" style="display: block;">
-    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('cap-cons')->toHtml();?>
+    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($captab)->toHtml() ?>
   </ul>
 </div>
 </div>    
 </div>
 <div class="ship-ret-pol-cont-sec-out">
 <div class="ship-ret-pol-cont-sec">
-   <div class="ship-pro-pol-cont-sec">
-    <?php if($_additional = $this->getAdditionalData()): ?>
-    <?php foreach ($_additional as $_data): ?>
-    <?php    if($this->escapeHtml($this->__($_data['code']) == 'processing_and_shipping')){  ?>
-    <?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>
-    <?php }else ?>
-    <?php endforeach; ?>
-   <?php endif;?> 
+   <div class="ship-pro-pol-cont-sec"> 
+   <?php echo $_product->getResource()->getAttribute('processing_and_shipping')->getFrontend()->getValue($_product); ?>
    </div>
    <div class="ex-ret-pol-cont-sec">    
-    <?php if($_additional = $this->getAdditionalData()): ?>
-    <?php foreach ($_additional as $_data): ?>
-    <?php    if($this->escapeHtml($this->__($_data['code']) == 'exchange')){  ?>
-    <?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>
-    <?php }else ?>
-    <?php endforeach; ?>
-   <?php endif;?>     
+    <?php echo $_product->getResource()->getAttribute('exchange')->getFrontend()->getValue($_product); ?>    
    </div>
 </div>
 
 <div class="pro-desc-cir-img-con-sec">
-    <?php if($_additional = $this->getAdditionalData()): ?>
-    <?php foreach ($_additional as $_data): ?>
-    <?php    if($this->escapeHtml($this->__($_data['code']) == 'new_offer')){  ?>
-    <?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>
-    <?php }else ?>
-    <?php endforeach; ?>
-   <?php endif;?>
+    <?php echo $_product->getResource()->getAttribute('new_offer')->getFrontend()->getValue($_product); ?>
 </div>
 <div class="pro-desc-lined-title-content">
-    <?php if($_additional = $this->getAdditionalData()): ?>
-    <?php foreach ($_additional as $_data): ?>
-    <?php    if($this->escapeHtml($this->__($_data['code']) == 'lac_front_wig')){  ?>
-    <?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?>
-    <?php }else ?>
-    <?php endforeach; ?>
-   <?php endif;?>  
+    <?php echo $_product->getResource()->getAttribute('lace_front_wig')->getFrontend()->getValue($_product); ?>  
 </div>
 </div>
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($faqtab)->toHtml() ?>
+
+
+
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -150,6 +241,124 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+jQuery(function($){
+         $(document).ready(function(){
+            
+      var htmltoadd = "";
+        var count = 0;
+        $('#select_13 option').each(function()
+        {
+            var capopt = $(this).text();
+            if(capopt=='Custom(+30days) '){days = 30} else {days = 0}
+            htmltoadd = htmltoadd + '<input type="radio" name="cap_size" class="cap_size ne_cap_'+count+'" id="cap_size_'+capopt+'" days="'+days+'"><label class="ne_cap_'+count+'" for="cap_size_'+capopt+'">'+capopt+'</label>';
+             count++;
+        });
+        htmltoadd = '<div class="cap_size_cus"><span class="click_span">Please Select</span><div id="click_size" ><div class="size_title">Cap Size<div class="save_size">SAVE</div></div><div class="cap_optns_cus">'+htmltoadd+'</div>';
+        
+        htmltoadd = htmltoadd + '<table><tbody><tr><td><span style="background-position:0 0;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size1.png"></span></td><td><span style="background-position:center 0;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size2.png"></span></td><td><span style="background-position:right 0;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size3.png"></span></td></tr>';
+        
+        htmltoadd = htmltoadd + '<tr><td>Circumference</td><td>Front To Nape</td><td>Ear To Ear Across Forehead</td></tr><tr><td><input id="Circumference" type="text" disabled="disabled" name="Circumference" value=""></td><td><input id="fronttonape" type="text" disabled="disabled" name="Front To Nape"value=""></td><td><input id="EarToEar" type="text" disabled="disabled" name="Ear To Ear Across Forehead" value=""></td></tr>';
+        
+        htmltoadd = htmltoadd + '<tr><td><span style="background-position:0 bottom;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size4.png"></span></td><td><span style="background-position:center bottom;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size5.png"></span></td><td><span style="background-position:right bottom;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size6.png"></span></td></tr><tr><td>Ear To Ear Over Top</td><td>Temple To Temple Round Back</td><td>Nape Of Neck</td></tr><tr><td><input id="EarToOverTop" type="text" disabled="disabled" name="Ear To Ear Over Top" value=""></td><td><input id="TempleToTemple" type="text" disabled="disabled" name="Temple To Temple Round Back" value=""></td><td><input id="NapeOfNeck" type="text" disabled="disabled" name="Nape Of Neck" value=""></td></tr></tbody></table></div></div>';
+            $('#select_13').after(htmltoadd);
+
+            if (jQuery(".click_span").length > 0) {
+            jQuery(".click_span").click(function() {
+                if (jQuery(this).hasClass("active"))
+                    jQuery(this).removeClass("active");
+                else
+                    jQuery(this).addClass("active");
+                jQuery("#click_size").toggle();
+            });
+                 jQuery("#click_size div input[type='radio']").click(function() {
+                if (jQuery(this).next("label").html().indexOf('Small') != -1) {
+                    jQuery("#click_size input[name='Circumference']").val('21"/21.5"');
+                    jQuery("#click_size input[name='Front To Nape']").val('12.5"/13"');
+                    jQuery("#click_size input[name='Ear To Ear Across Forehead']").val('11.5"');
+                    jQuery("#click_size input[name='Ear To Ear Over Top']").val('12"');
+                    jQuery("#click_size input[name='Temple To Temple Round Back']").val('14.5"');
+                    jQuery("#click_size input[name='Nape Of Neck']").val('4.5"');
+                    jQuery("#click_size input[type='text']").attr("disabled", "disabled");
+                    jQuery('.cap_size_out_cus .control select.product-custom-option option:contains(Small)').attr('selected', true);
+                    jQuery('span.click_span').html('Small');    
+
+                } else if (jQuery(this).next("label").html().indexOf('Medium') != -1) {
+                    jQuery("#click_size input[name='Circumference']").val('22"');
+                    jQuery("#click_size input[name='Front To Nape']").val('13.5"/14"');
+                    jQuery("#click_size input[name='Ear To Ear Across Forehead']").val('12"');
+                    jQuery("#click_size input[name='Ear To Ear Over Top']").val('12.5"');
+                    jQuery("#click_size input[name='Temple To Temple Round Back']").val('15"');
+                    jQuery("#click_size input[name='Nape Of Neck']").val('4.75"');
+                    jQuery("#click_size input[type='text']").attr("disabled", "disabled");
+                    jQuery('.cap_size_out_cus .control select.product-custom-option option:contains(Medium)').attr('selected', true);
+                    jQuery('span.click_span').html('Medium');
+                } else if (jQuery(this).next("label").html().indexOf('Large') != -1) {
+                    jQuery("#click_size input[name='Circumference']").val('23"');
+                    jQuery("#click_size input[name='Front To Nape']").val('14"/14.5"');
+                    jQuery("#click_size input[name='Ear To Ear Across Forehead']").val('12.5"');
+                    jQuery("#click_size input[name='Ear To Ear Over Top']").val('13"');
+                    jQuery("#click_size input[name='Temple To Temple Round Back']").val('16"');
+                    jQuery("#click_size input[name='Nape Of Neck']").val('5"');
+                    jQuery("#click_size input[type='text']").attr("disabled", "disabled");
+                    jQuery('.cap_size_out_cus .control select.product-custom-option option:contains(Large)').attr('selected', true);
+                    jQuery('span.click_span').html('Large');
+                } else if ( (/\s*Custom\s*/i.test(jQuery(this).next("label").html() + '')) || (jQuery(this).next("label").html().indexOf('Custom') != -1) ) {
+                    jQuery("#click_size input[type='text']").val('');
+                    jQuery("#click_size input[type='text']").removeAttr("disabled");
+                    jQuery('span.click_span').html('Custom(+30days) ');
+                }
+                var days = 0;
+                days = parseInt(jQuery(this).attr("days"));
+                if (days !== 0) {
+                    jQuery("#click_size").prevAll(".handletime").remove();
+                    jQuery("#click_size").before('<span class="handletime">+' + days + ' days</span>');
+                    
+                } else {
+                    jQuery("#click_size").prevAll(".handletime").remove();
+                    
+               }
+                jQuery('.save_size').click(function()
+                {
+                var boo = true;
+                var inputtext = jQuery("#click_size input[type='text']");
+                for(var k = 0; k<inputtext.length; k++){
+                   if(jQuery(inputtext[k]).val() == ""){
+                     jQuery(inputtext[k]).attr("style", "border:1px dashed #eb340a !important; background:#faebe7 !important;");
+                     if(boo){
+                       boo = false;
+                     }
+                   } else {
+                     jQuery(inputtext[k]).removeAttr('style');
+                   }
+                }
+                if(boo){
+                  jQuery("#click_size input[type='text']").removeAttr('style');
+                    var Circumference = $("#Circumference").val();
+                    console.log(Circumference);
+                    var FrontToNape = $("#fronttonape").val();
+                    var EarToEar= $("#EarToEar").val();
+                    var EarToOverTop= $("#EarToOverTop").val();
+                    var TempleToTemple= $("#TempleToTemple").val();
+                    var NapeOfNeck= $("#NapeOfNeck").val();
+                    $(".custom_ops.circumference .control .product-custom-option").val(Circumference);
+                    $(".custom_ops.fronttonape .control .product-custom-option").val(FrontToNape);
+                    $(".custom_ops.eartoearacrossforehead .control .product-custom-option").val(EarToEar);
+                    $(".custom_ops.eartoearovertop .control .product-custom-option").val(EarToOverTop);
+                    $(".custom_ops.templetotempleroundback .control .product-custom-option").val(TempleToTemple);
+                    $(".custom_ops.napeofneck .control .product-custom-option").val(NapeOfNeck);
+                    jQuery(".click_span.active").removeClass("active");
+                    jQuery("#click_size").hide();
+                }
+                    
+            });
+                
+            });
+
+
+        }
+
+          });
+  });  
 </script>
 <?php /*if($_additional = $this->getAdditionalData()): ?>
     <h2><?php echo $this->__('Additional Information') ?></h2>

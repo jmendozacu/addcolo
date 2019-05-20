@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2019-05-18T08:30:13+00:00 ERR (3): Notice: Undefined index: header_menu_classicmenu_bordercolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 834
 2019-05-18T08:30:13+00:00 ERR (3): Notice: Undefined index: footer_middle_2_bgcolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 935
 2019-05-18T08:30:13+00:00 ERR (3): Notice: Undefined index: footer_middle_2_color  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 942
@@ -100,3 +101,415 @@
 2019-05-18T10:01:31+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
 2019-05-18T10:01:37+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
 2019-05-18T13:25:45+00:00 ERR (3): Recoverable Error: Object of class Mage_Catalog_Helper_Output could not be converted to string  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 35
+=======
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: sticky_header_mobile  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 146
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: custom_style_2  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 275
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: sticky_header_mobile  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 146
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: custom_style_2  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 275
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: sticky_header_mobile  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 146
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: custom_style_2  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\settings.phtml on line 275
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: header_menu_classicmenu_bordercolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 834
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_bgcolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 935
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_color  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 942
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: header_menu_classicmenu_bordercolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 834
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_bgcolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 935
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_color  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 942
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: header_menu_classicmenu_bordercolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 834
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_bgcolor  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 935
+2019-05-18T08:14:14+00:00 ERR (3): Notice: Undefined index: footer_middle_2_color  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\porto\css\design.phtml on line 942
+2019-05-18T08:36:05+00:00 DEBUG (7): Security problem: filterproducts/latest_home_list has not been whitelisted.
+2019-05-18T08:36:06+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:41:15+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-18T09:50:51+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:50:59+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:07+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:15+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:21+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:27+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:34+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:39+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:52+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:51:58+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:04+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:12+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:19+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:26+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:32+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:52:37+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:53:26+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:53:33+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:53:40+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:53:46+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T09:53:50+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:01:41+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:01:45+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:01:49+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:01:53+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:01:57+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T10:02:05+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Notice: Undefined variable: video_array  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:46:42+00:00 ERR (3): Warning: in_array() expects parameter 2 to be array, null given  in C:\xampp\htdocs\addcolo\app\design\frontend\base\default\template\catalog\product\view\attributes.phtml on line 162
+2019-05-18T11:51:31+00:00 ERR (3): Warning: include(Magento\Product.php): failed to open stream: No such file or directory  in C:\xampp\htdocs\addcolo\lib\Varien\Autoload.php on line 94
+2019-05-18T11:51:31+00:00 ERR (3): Warning: include(): Failed opening 'Magento\Product.php' for inclusion (include_path='C:\xampp\htdocs\addcolo\app\code\local;C:\xampp\htdocs\addcolo\app\code\community;C:\xampp\htdocs\addcolo\app\code\core;C:\xampp\htdocs\addcolo\lib;C:\xampp\php\PEAR')  in C:\xampp\htdocs\addcolo\lib\Varien\Autoload.php on line 94
+2019-05-18T11:53:47+00:00 ERR (3): Warning: include(Magento\Product.php): failed to open stream: No such file or directory  in C:\xampp\htdocs\addcolo\lib\Varien\Autoload.php on line 94
+2019-05-18T11:53:47+00:00 ERR (3): Warning: include(): Failed opening 'Magento\Product.php' for inclusion (include_path='C:\xampp\htdocs\addcolo\app\code\local;C:\xampp\htdocs\addcolo\app\code\community;C:\xampp\htdocs\addcolo\app\code\core;C:\xampp\htdocs\addcolo\lib;C:\xampp\php\PEAR')  in C:\xampp\htdocs\addcolo\lib\Varien\Autoload.php on line 94
+2019-05-18T12:13:08+00:00 ERR (3): Warning: include(Magento\Product.php): failed to open stream: No such file or directory  in C:\xampp\htdocs\addcolo\lib\Varien\Autoload.php on line 94
+2019-05-18T12:13:08+00:00 ERR (3): Warning: include(): Failed opening 'Magento\Product.php' for inclusion (include_path='C:\xampp\htdocs\addcolo\app\code\local;C:\xampp\htdocs\addcolo\app\code\community;C:\xampp\htdocs\addcolo\app\code\core;C:\xampp\htdocs\addcolo\lib;C:\xampp\php\PEAR')  in C:\xampp\htdocs\addcolo\lib\Varien\Autoload.php on line 94
+2019-05-18T12:23:55+00:00 ERR (3): Notice: Undefined variable: _product  in C:\xampp\htdocs\addcolo\app\design\frontend\smartwave\porto\template\review\product_info_review.phtml on line 29
+>>>>>>> aa41d5ec3e13b4ad247f74734cb7d75c494ac619
+2019-05-20T06:08:49+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:10:51+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:10:56+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:12:54+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:23:45+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:31:24+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:32:16+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:35:15+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:35:52+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:35:59+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:39:37+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:42:38+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:56:37+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:57:52+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:57:57+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:58:04+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:58:16+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:59:07+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:59:15+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:59:20+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:59:26+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:59:31+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:59:39+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:59:45+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T06:59:53+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:00:01+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:00:06+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:00:12+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:00:20+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:00:27+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:00:32+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:00:39+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:00:47+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:02:09+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:02:13+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:02:17+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:02:28+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:02:33+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:02:44+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:02:48+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:02:53+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:03:44+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:03:49+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:03:55+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:04:01+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:04:09+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:04:18+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:04:26+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:12:10+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:12:18+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:12:25+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:12:31+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:12:37+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:12:45+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:12:51+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:12:58+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:13:04+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:13:09+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:13:15+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:16:37+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:17:52+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:18:15+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:19:21+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:37:27+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:37:33+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:37:40+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:37:46+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:37:51+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:37:55+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:37:59+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:38:03+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:38:07+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:38:11+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:38:15+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:38:19+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:40:18+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:52:56+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:58:34+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:58:39+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:58:44+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:58:50+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:58:54+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:58:58+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:59:02+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:59:08+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:59:12+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:59:18+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:59:22+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T07:59:26+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:00:11+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:00:16+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:00:20+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:00:27+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:00:31+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:00:39+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:00:44+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:01:22+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:01:30+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:01:34+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:01:39+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:01:46+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:01:50+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:01:54+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:01:58+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:02:03+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:05:11+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:05:16+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:05:21+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:05:25+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:05:29+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:05:33+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:05:38+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:05:43+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:05:48+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:05:54+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:05:58+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:06:41+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:07:08+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:11:20+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:12:03+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:15:06+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:15:39+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:16:35+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:17:51+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:18:29+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:19:02+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:19:33+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:20:05+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:20:46+00:00 ERR (3): Notice: Array to string conversion  in C:\xampp\htdocs\addcolo\app\design\frontend\smartwave\porto\template\catalog\product\list.phtml on line 52
+2019-05-20T08:20:47+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:21:31+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:22:15+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:22:57+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:23:13+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:23:30+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:24:21+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:24:27+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:24:31+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:24:36+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:24:42+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:24:47+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:26:32+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:33:36+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:33:44+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:33:49+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:34:49+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:34:56+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:35:02+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:35:42+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T08:36:51+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:38:03+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:38:11+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:38:11+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:38:11+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:38:12+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:38:12+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:38:12+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:38:18+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:38:37+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:38:59+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:39:04+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:39:10+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:39:17+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:39:23+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:39:26+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:39:34+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:39:44+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:39:52+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:39:57+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:03+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:11+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:13+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:18+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:21+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:27+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:29+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:34+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:36+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:42+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:45+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:50+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:54+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:40:58+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:02+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:06+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:10+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:14+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:18+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:22+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:25+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:30+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:33+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:38+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:41+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:46+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:49+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:53+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:41:57+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:01+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:04+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:08+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:14+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:20+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:25+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:29+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:33+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:38+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:44+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:49+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:42:54+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:00+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:05+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:11+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:15+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:19+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:24+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:28+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:32+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:36+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:40+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:45+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:50+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:54+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:43:58+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:02+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:07+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:11+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:16+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:21+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:25+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:32+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:37+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:42+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:47+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:51+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:44:56+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:45:01+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:45:06+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:45:12+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T10:45:17+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:24:59+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:26:52+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:29:37+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:29:42+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:29:46+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:29:51+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:29:55+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:29:59+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:30:03+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:30:30+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:30:36+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:30:43+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:30:48+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:30:52+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:30:59+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:06+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:10+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:14+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:18+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:22+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:27+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:31+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:35+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:39+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:43+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:48+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:48+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:52+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:53+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:57+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:31:58+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:32:02+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:32:02+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:32:07+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:32:07+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:34:30+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 86: parser error : Double hyphen within comment: &lt;!-- &lt;reference name=&quot;head&quot;&gt;
+            &lt;action metho  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string(): ddItem&quot;&gt;&lt;type&gt;js_css&lt;/type&gt;&lt;name&gt;calendar/calendar-win2k-1.css&lt;/name&gt;&lt;params/&gt;&lt;!  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():                                                                                ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 87: parser error : Double hyphen within comment: &lt;!--/action&gt;
+            &lt;!  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():             &lt;!--action method=&quot;addItem&quot;&gt;&lt;type&gt;js&lt;/type&gt;&lt;name&gt;calendar/calendar.j  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():               ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 87: parser error : Double hyphen within comment: &lt;!--/action&gt;
+            &lt;!--action method=&quot;addItem&quot;&gt;&lt;  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():   &lt;!--action method=&quot;addItem&quot;&gt;&lt;type&gt;js&lt;/type&gt;&lt;name&gt;calendar/calendar.js&lt;/name&gt;&lt;!  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():                                                                                ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 88: parser error : Double hyphen within comment: &lt;!--/action&gt;
+            &lt;action method=&quot;addItem&quot;&gt;&lt;typ  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string(): action method=&quot;addItem&quot;&gt;&lt;type&gt;js&lt;/type&gt;&lt;name&gt;calendar/calendar-setup.js&lt;/name&gt;&lt;!  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():                                                                                ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 89: parser error : Opening and ending tag mismatch: catalogsearch_advanced_index line 78 and reference  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():         &lt;/reference&gt; --&gt;  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 94: parser error : Opening and ending tag mismatch: layout line 30 and catalogsearch_advanced_index  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():     &lt;/catalogsearch_advanced_index&gt;  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():                                    ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 100: parser error : Extra content at the end of the document  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():     &lt;catalogsearch_advanced_result translate=&quot;label&quot;&gt;  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:28+00:00 ERR (3): Warning: simplexml_load_string():     ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:33+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 86: parser error : Double hyphen within comment: &lt;!-- &lt;reference name=&quot;head&quot;&gt;
+            &lt;action metho  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string(): ddItem&quot;&gt;&lt;type&gt;js_css&lt;/type&gt;&lt;name&gt;calendar/calendar-win2k-1.css&lt;/name&gt;&lt;params/&gt;&lt;!  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():                                                                                ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 87: parser error : Double hyphen within comment: &lt;!--/action&gt;
+            &lt;!  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():             &lt;!--action method=&quot;addItem&quot;&gt;&lt;type&gt;js&lt;/type&gt;&lt;name&gt;calendar/calendar.j  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():               ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 87: parser error : Double hyphen within comment: &lt;!--/action&gt;
+            &lt;!--action method=&quot;addItem&quot;&gt;&lt;  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():   &lt;!--action method=&quot;addItem&quot;&gt;&lt;type&gt;js&lt;/type&gt;&lt;name&gt;calendar/calendar.js&lt;/name&gt;&lt;!  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():                                                                                ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 88: parser error : Double hyphen within comment: &lt;!--/action&gt;
+            &lt;action method=&quot;addItem&quot;&gt;&lt;typ  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string(): action method=&quot;addItem&quot;&gt;&lt;type&gt;js&lt;/type&gt;&lt;name&gt;calendar/calendar-setup.js&lt;/name&gt;&lt;!  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():                                                                                ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 89: parser error : Opening and ending tag mismatch: catalogsearch_advanced_index line 78 and reference  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():         &lt;/reference&gt; --&gt;  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():                     ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 94: parser error : Opening and ending tag mismatch: layout line 30 and catalogsearch_advanced_index  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():     &lt;/catalogsearch_advanced_index&gt;  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():                                    ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string(): Entity: line 100: parser error : Extra content at the end of the document  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():     &lt;catalogsearch_advanced_result translate=&quot;label&quot;&gt;  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:36:34+00:00 ERR (3): Warning: simplexml_load_string():     ^  in C:\xampp\htdocs\addcolo\app\code\core\Mage\Core\Model\Layout\Update.php on line 450
+2019-05-20T11:37:13+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
