@@ -67,7 +67,7 @@ header.page-header{
 	font-family: 'Anklada-nov';
 	color: #090700 !important;
 	position: absolute;
-	left: 0;
+	left: 25px;
 	top: 40px;
 }
 .acl-nlt-header-top-join{
@@ -134,7 +134,7 @@ header.page-header{
 	margin-left: 0px;
 }
 .sw-megamenu.navigation li.level0 > .submenu{
-	top: 42px;
+	top: 35px;
 }
 .sw-megamenu.navigation li.level0 > .submenu .subchildmenu li.level1 > a{
 	margin-top: 0px !important;
@@ -298,6 +298,7 @@ header.page-header{
 	color: #090700;
 	line-height: 40px;
 	margin: 0 0 70px 0;
+	text-align: left;
 }
 .acl-nlt-black-btn{
 	background: #080300;
@@ -2384,6 +2385,35 @@ div#click_size tr td span img{
 	}
 }
 @media (max-width: 767px){
+   .cms-porto-home-11 .top-container {
+    padding: 0;
+    }
+	#banner-slider-demo-11 {
+    display: none !important;
+    }
+    form#search_mini_form {
+    margin-top: 10px;
+    }
+    .block .actions button.button {
+    display: none;
+    }
+    input#search {
+    background: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #cccccc;
+    border-radius: 6px !important;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    height: 38px !important;
+    line-height: 1.4;
+    padding: 10px !important;
+    vertical-align: baseline;
+    width: 270px !important;
+    box-sizing: border-box;
+   }
+    .nav-toggle:before {
+    margin-top: 5px;
+    }
 	.sin-pro-nlt-fea-row-main.desk_view_cus{
 		display: none;
 	}	
@@ -2732,12 +2762,6 @@ div#click_size tr td span img{
 	}	
 	/*single product page ends*/
 	/*custom search for mobile*/
-	.page-header.type11 .acl-nlt-header-sec-nav-search .search-area .search-toggle-icon{
-		display: none;
-	}
-	.page-header.type11 .acl-nlt-header-sec-nav-search .search-area .search_area{
-		display: block !important;
-	}
 	.page-header.type11 .acl-nlt-header-sec-nav-search .search-area .search_area .block-search .label{
 		margin-right: 0px;
 	}
@@ -3358,3 +3382,6 @@ input#search {
 .catalog-product-view select#select_6216 {
     display: none;
 }
+.sections.nav-sections {
+    margin-bottom: 15px;
+    }

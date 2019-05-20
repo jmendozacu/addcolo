@@ -187,4 +187,5 @@
 2019-05-20T07:40:41+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
 2019-05-20T11:27:52+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
 2019-05-20T11:28:53+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
-2019-05-20T14:13:30+00:00 DEBUG (7): Security problem: ”core/template” has not been whitelisted.
+2019-05-20T11:44:21+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
+2019-05-20T11:44:36+00:00 DEBUG (7): Security problem: filterproducts/featured_home_list has not been whitelisted.
