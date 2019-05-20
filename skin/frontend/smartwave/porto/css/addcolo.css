@@ -3255,7 +3255,7 @@ input#search {
     background: #fff;
     padding: 0 5px 0 5px;
     border: 1px solid #ddd;
-    top: 50px;
+    top: 0px;
     left: 0;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -3270,7 +3270,7 @@ input#search {
     margin: 0 5px 5px 0;
     font-size: 15px;
     font-weight: bold;
-    padding: 5px 0 0 20px;
+    padding: 5px 0 6px 20px;
 }
 .catalog-product-view div#click_color .color_title .save_color, div#click_size .size_title .save_size {
     position: absolute;
@@ -3311,5 +3311,50 @@ input#search {
     margin-bottom: 5px;
 }
 .catalog-product-view .ne_cap_0 {
+    display: none;
+}
+/* Register page */
+.customer-account-create .fieldset.create.info {
+    width: 50%;
+    padding: 0 25px;
+    float: left;
+}
+.customer-account-create .fieldset.create.account {
+    width: 50%;
+    padding: 0 25px;
+    float: left;
+}
+.customer-account-create .form-list .field {
+    width: 100%;
+}
+.customer-account-create .form-list .field {
+    margin-left: 0;
+}
+.customer-account-create .fieldset.create.account{
+	margin-top:0;
+}
+.customer-account-create .form-wrap .fieldset + .fieldset, .customer-account-create #form-validate .fieldset + .fieldset {
+    margin-top: 0;
+}
+.customer-account-create .buttons-set button.button {
+    float: left;
+    margin-left: 25px;
+}
+.customer-account-create .buttons-set button.button span {
+    background: #D9365A;
+}
+.customer-account-create  .fields .input-box {
+    margin: 0 0 18px !important;
+}
+.customer-account-create .top-container,.customer-account-login .top-container{
+    display: none;
+}
+.customer-account-create span.base,.customer-account-login span.base {
+    color: #D9365A;
+}
+.customer-account-create .checkout-cart-index .top-container {
+    display: none;
+}
+.catalog-product-view select#select_6216 {
     display: none;
 }

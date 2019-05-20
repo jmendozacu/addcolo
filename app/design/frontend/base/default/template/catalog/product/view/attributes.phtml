@@ -243,16 +243,18 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 jQuery(function($){
          $(document).ready(function(){
-            
       var htmltoadd = "";
         var count = 0;
-        $('#select_13 option').each(function()
+        
+        $('#select_6216 option').each(function()
         {
             var capopt = $(this).text();
+            var capoptval = $(this).val();
             if(capopt=='Custom(+30days) '){days = 30} else {days = 0}
-            htmltoadd = htmltoadd + '<input type="radio" name="cap_size" class="cap_size ne_cap_'+count+'" id="cap_size_'+capopt+'" days="'+days+'"><label class="ne_cap_'+count+'" for="cap_size_'+capopt+'">'+capopt+'</label>';
+            htmltoadd = htmltoadd + '<input type="radio" value="'+capoptval+'" name="cap_size" class="cap_size ne_cap_'+count+'" id="cap_size_'+capopt+'" days="'+days+'"><label class="ne_cap_'+count+'" for="cap_size_'+capopt+'">'+capopt+'</label>';
              count++;
         });
+
         htmltoadd = '<div class="cap_size_cus"><span class="click_span">Please Select</span><div id="click_size" ><div class="size_title">Cap Size<div class="save_size">SAVE</div></div><div class="cap_optns_cus">'+htmltoadd+'</div>';
         
         htmltoadd = htmltoadd + '<table><tbody><tr><td><span style="background-position:0 0;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size1.png"></span></td><td><span style="background-position:center 0;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size2.png"></span></td><td><span style="background-position:right 0;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size3.png"></span></td></tr>';
@@ -260,7 +262,12 @@ jQuery(function($){
         htmltoadd = htmltoadd + '<tr><td>Circumference</td><td>Front To Nape</td><td>Ear To Ear Across Forehead</td></tr><tr><td><input id="Circumference" type="text" disabled="disabled" name="Circumference" value=""></td><td><input id="fronttonape" type="text" disabled="disabled" name="Front To Nape"value=""></td><td><input id="EarToEar" type="text" disabled="disabled" name="Ear To Ear Across Forehead" value=""></td></tr>';
         
         htmltoadd = htmltoadd + '<tr><td><span style="background-position:0 bottom;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size4.png"></span></td><td><span style="background-position:center bottom;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size5.png"></span></td><td><span style="background-position:right bottom;"><img src="https://www.addcolo.com/skin/frontend/rwd/site/images/size6.png"></span></td></tr><tr><td>Ear To Ear Over Top</td><td>Temple To Temple Round Back</td><td>Nape Of Neck</td></tr><tr><td><input id="EarToOverTop" type="text" disabled="disabled" name="Ear To Ear Over Top" value=""></td><td><input id="TempleToTemple" type="text" disabled="disabled" name="Temple To Temple Round Back" value=""></td><td><input id="NapeOfNeck" type="text" disabled="disabled" name="Nape Of Neck" value=""></td></tr></tbody></table></div></div>';
-            $('#select_13').after(htmltoadd);
+            $('#select_6216').after(htmltoadd);
+
+           $('body').on('click', '.cap_optns_cus input', function() {
+             var cap__option  = $('input[name=cap_size]:checked').val();
+             $('#select_6216 option[value='+cap__option+']').attr('selected','selected'); 
+            });
 
             if (jQuery(".click_span").length > 0) {
             jQuery(".click_span").click(function() {
@@ -334,18 +341,17 @@ jQuery(function($){
                 if(boo){
                   jQuery("#click_size input[type='text']").removeAttr('style');
                     var Circumference = $("#Circumference").val();
-                    console.log(Circumference);
                     var FrontToNape = $("#fronttonape").val();
                     var EarToEar= $("#EarToEar").val();
                     var EarToOverTop= $("#EarToOverTop").val();
                     var TempleToTemple= $("#TempleToTemple").val();
                     var NapeOfNeck= $("#NapeOfNeck").val();
-                    $(".custom_ops.circumference .control .product-custom-option").val(Circumference);
-                    $(".custom_ops.fronttonape .control .product-custom-option").val(FrontToNape);
-                    $(".custom_ops.eartoearacrossforehead .control .product-custom-option").val(EarToEar);
-                    $(".custom_ops.eartoearovertop .control .product-custom-option").val(EarToOverTop);
-                    $(".custom_ops.templetotempleroundback .control .product-custom-option").val(TempleToTemple);
-                    $(".custom_ops.napeofneck .control .product-custom-option").val(NapeOfNeck);
+                    $("#options_6217_text").val(Circumference);
+                    $("#options_6218_text").val(FrontToNape);
+                    $("#options_6219_text").val(EarToEar);
+                    $("#options_6220_text").val(EarToOverTop);
+                    $("#options_6221_text").val(TempleToTemple);
+                    $("#options_6222_text").val(NapeOfNeck);
                     jQuery(".click_span.active").removeClass("active");
                     jQuery("#click_size").hide();
                 }
