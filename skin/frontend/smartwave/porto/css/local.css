@@ -30,7 +30,7 @@ ul,ol{list-style:none;margin:0;padding:0}
 .hidden{display:block!important;border:0!important;margin:0!important;padding:0!important;font-size:0!important;line-height:0!important;width:0!important;height:0!important;overflow:hidden!important}
 .nobr{white-space:nowrap!important}
 .wrap{white-space:normal!important}
-.a-left{text-align:left!important}
+.a-left{text-align:left!important;background: #000;color: #fff;display: none;}
 .a-center{text-align:center!important}
 .a-right{text-align:right!important}
 .v-top{vertical-align:top}
@@ -183,7 +183,7 @@ p.required{font-size:11px;text-align:right;color:#EB340A}
 .owl-top-narrow .error-msg,.owl-top-narrow .success-msg,.owl-top-narrow .note-msg,.owl-top-narrow .notice-msg{margin:10px}
 .page-title{text-align:left}
 .page-title h1,.page-title h2{margin:0;font-size:20px;color:#484747}
-.col-main .page-title h1,.col-main .page-title h2{font-size:20px;margin:0 0 15px;color:#08c;text-transform:uppercase;font-weight:600}
+.col-main .page-title h1,.col-main .page-title h2{font-size:20px;margin:0 0 15px;color:#08c;font-weight:600}
 .page-title.category-title{display:none}
 .col-main .page-title.category-title h1{margin-bottom:10px}
 .page-title .separator{margin:0 3px}
@@ -2234,7 +2234,7 @@ p.fullwidth-filter-description{font-size:14px;color:#666;line-height:1.4;margin-
 .footer .tags-list li{margin:0;margin-bottom:2px;display:inline-block!important}
 .footer .tags-list a{color:#fff;background-color:#000;padding:0 7px;line-height:25px;display:inline-block;font-size:12px!important;border-radius:3px}
 .footer .tags-list a:hover{color:#fff}
-.page-header{margin:0;padding:0;min-height:175px;background:url(../images/page_header.jpg) center center no-repeat;background-size:cover;border:0}
+.page-header{/*margin:0;padding:0;min-height:175px;background:url(../images/page_header.jpg) center center no-repeat;background-size:cover;*/border:0}
 #banner-slider-demo-11 .content-1{position:absolute;left:50%;top:50%;padding:30px 20px 15px;text-align:left;margin-left:-163px;margin-top:-95px}
 #banner-slider-demo-11 .content-1>div{display:inline-block;vertical-align:middle}
 #banner-slider-demo-11 .content-1>div:first-child{padding-right:10px}

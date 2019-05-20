@@ -192,6 +192,17 @@
 	?>
     <?php foreach($_options as $_option): ?>
         <?php //echo $this->getOptionHtml($_option) ?>
+        <?php if($optionscount == 5) : ?>
+            <div class="expand_hidden_opts" style="display:none;">
+                <?php 
+                    if($optionscount == 6)
+                    {
+                        echo $this->getOptionHtml($_option);
+                    }
+                ?>
+                <?php elseif ($optionscount == 11): ?>
+            </div>
+        <?php endif; ?>  
 		<?php if ($optionscount == 12) : ?>
 			<dt><label></label></dt>
 			<dd>
