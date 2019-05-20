@@ -11,11 +11,11 @@
                 </option>
             <?php endforeach; ?>
             </select>
-            <?php if($this->getCurrentDirection() == 'desc'): ?>
+            <!-- <?php if($this->getCurrentDirection() == 'desc'): ?>
                 <a href="<?php echo $this->getOrderUrl(null, 'asc') ?>" title="<?php echo $this->__('Set Ascending Direction') ?>"><i class="icon-down"></i></a>
             <?php else: ?>
                 <a href="<?php echo $this->getOrderUrl(null, 'desc') ?>" title="<?php echo $this->__('Set Descending Direction') ?>"><i class="icon-up"></i></a>
-            <?php endif; ?>
+            <?php endif; ?> -->
         </div>
 
         <?php if( $this->isEnabledViewSwitcher() ): ?>
@@ -42,7 +42,7 @@
             </p>
             <?php echo $this->getPagerHtml() ?>
         </div>
-        <div class="limiter">
+        <!-- <div class="limiter">
             <label><?php echo $this->__('Show') ?>:</label>
             <select onchange="setLocation(this.value)">
             <?php foreach ($this->getAvailableLimit() as  $_key=>$_limit): ?>
@@ -51,7 +51,7 @@
                 </option>
             <?php endforeach; ?>
             </select>
-        </div>
+        </div> -->
     </div>
     <?php endif; ?>
 </div>

@@ -448,8 +448,9 @@ a.comparelink .icon-compare:before {
     font-family: 'porto';
     position: absolute;
     left: 0;
-    top: 0;
+    top: 10px;
     text-indent: 0;
+    color: #fff;
 }
 .catalog-category-view .col2-left-layout .col-left.sidebar:before {
     content: '';
@@ -664,7 +665,7 @@ a.comparelink .icon-compare:before {
     font-size: 15px;
     width: 15px;
     height: 15px;
-    color: #000;
+    color: #D9365A;
 }
 .toolbar .sorter .sort-by select {
     min-width: 100px;
@@ -677,7 +678,7 @@ a.comparelink .icon-compare:before {
 }
 .sorter .view-mode strong i, .sorter .view-mode a:hover i {
     background-color: transparent;
-    color: #000;
+    color: #D9365A;
 }
 .sorter .view-mode {
     float: right;
@@ -714,6 +715,7 @@ a.comparelink .icon-compare:before {
     background: none;
     display: block;
     border: solid 1px #e9e9e9;
+    border-radius:50%;
 }
 .toolbar .pages {
     display: none;
@@ -750,7 +752,10 @@ a.comparelink .icon-compare:before {
     background-color: transparent;
 }
 .pager .pages .current {
-    color: #706f6c;
+    color: #fff;
+    background: #f38585 !important;
+    border-color: #f38585 !important;
+    border-radius: 50%;
 }
 .products-grid .ratings {
     margin: 0 0 9px;

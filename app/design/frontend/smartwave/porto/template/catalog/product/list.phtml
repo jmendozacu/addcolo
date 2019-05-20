@@ -45,6 +45,19 @@ var i = 0;
 </div>
 <?php else: ?>
 <div class="category-products container">
+    <?php $server_uri = $_SERVER['REQUEST_URI'];?>
+    <?php $seachValue = ($this->helper('catalogsearch')->getEscapedQueryText()) ?>
+    <?php
+        //echo $server_uri;
+        $explodename = explode('?',$server_uri);
+        //echo $explodename[0];
+        // echo "<br>";
+        // echo '/addcolo/catalogsearch/result/?q='.$seachValue.'';
+        if(($explodename[0] == '/addcolo/catalogsearch/result/') || ($explodename[0] == '/addcolo/catalogsearch/result/index/'))
+        {
+            echo $this->getToolbarHtml();
+        }
+    ?>
     <?php //echo $this->getToolbarHtml() ?>
     <?php // List mode ?>
     <?php if($this->getMode()!='grid'): ?>
@@ -52,7 +65,8 @@ var i = 0;
     <ol class="products-list" id="products-list">
     <?php foreach ($_productCollection as $_product): ?>
 	<?php $product = $_product;//Mage::getModel('catalog/product')->load($_product->getId()); ?>
-        <li class="item"><div class="item-area">
+        <li class="item">
+            <div class="item-area">
                 <div class="product-image-area">
                     <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
                     <?php
