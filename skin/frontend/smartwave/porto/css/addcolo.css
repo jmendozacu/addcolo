@@ -2385,6 +2385,19 @@ div#click_size tr td span img{
 	}
 }
 @media (max-width: 767px){
+	.menu-icon {
+	display: block !important;
+    float: left;
+    text-decoration: none;
+    float: left;
+    line-height: 73px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1;
+}
+.acl-nlt-header-sec-top {
+    padding: 0 !important;
+}
    .cms-porto-home-11 .top-container {
     padding: 0;
     }
@@ -3385,3 +3398,6 @@ input#search {
 .sections.nav-sections {
     margin-bottom: 15px;
     }
+.mobile-nav-shown .sections.nav-sections {
+    left: 0;
+}

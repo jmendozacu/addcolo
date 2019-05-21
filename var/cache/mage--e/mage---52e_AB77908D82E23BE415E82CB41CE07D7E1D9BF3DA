@@ -1,0 +1,17 @@
+
+<form id="search_mini_form" action="//127.0.0.1/addcolo/catalogsearch/result/" method="get">
+    <div class="field search">
+                <div class="control">
+        <input id="search" type="text" name="q" class="input-text" />
+    </div>
+    <div class="actions">
+                <button type="submit" title="Search" class="button"><i class="icon-search"></i></button>
+            </div>
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+        <div class="clearer"></div>
+    </div>
+</form>
+
+
+
+
