@@ -5,9 +5,10 @@
     $custom_block = Mage::getStoreConfig('porto_settings/header/static_block', $code);
 ?>
 <header class="page-header type11 ">
-   <span data-action="toggle-nav" class="action nav-toggle"><span>Toggle Nav</span></span>
+   <!-- <span data-action="toggle-nav" class="action nav-toggle"><span>Toggle Nav</span></span> -->
     <div class="acl-nlt-header-sec">
         <div class="acl-nlt-header-sec-top">
+            <div class="menu-icon"><a href="javascript:void(0)" title="Menu"><i class="fa fa-bars"></i></a></div>
             <a href="<?php echo Mage::getUrl('customer/account/login'); ?>" class="acl-nlt-header-top-login">Log In &gt;<em class="porto-icon-user"></em></a>
             <div class="acl-nlt-logo-box">
                 <strong class="logo">
@@ -27,19 +28,16 @@
                 </nav>
             </div>
 
-
-
-
-
-
          <div class="acl-nlt-header-sec-nav-right">
             <ul>
-                <li class="acl-nlt-header-sec-nav-search">  <div class="search-area">
-                    <a href="javascript:void(0)" class="search-toggle-icon"><i class="porto-icon-search"></i></a>
-                    <div class="search_area" style="display:none;"><div class="block block-search">
-                 <?php echo $this->getChildHtml('topSearch'); ?>
-                    </div>
-                    </div>
+                <li class="acl-nlt-header-sec-nav-search">
+                    <div class="search-area">
+                        <a href="javascript:void(0)" class="search-toggle-icon"><i class="porto-icon-search"></i></a>
+                        <div class="search_area" style="display:none;">
+                            <div class="block block-search">
+                                <?php echo $this->getChildHtml('topSearch'); ?>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li class="acl-nlt-header-sec-nav-cart">
@@ -48,16 +46,10 @@
                     </div>
                 </li>
             </ul>
-        </div>
-
-
-
-
-
-
-            
+        </div>       
         </div>
    </div>
+   <?php echo $this->getChildHtml('mobile.nav') ?>
 </header>
 <script type="text/javascript">
     jQuery(function($){
@@ -70,6 +62,18 @@
         {
             jQuery(this).next('.nl-footer-link-list').toggle();
             jQuery(this).toggleClass('expanded');
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('body').click('.open-child',function()
+        {
+            $(this).find('.level0.submenu').css({
+                visibility : 'visible',
+                height: 'auto'
+            });
         });
     });
 </script>
