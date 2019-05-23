@@ -15,10 +15,10 @@ $code  = $store->getCode();
         <?php endif; ?>
         </ul>
     </div>
-    <?php
+    <!-- <?php
     $custom_block = Mage::getStoreConfig('porto_settings/header/static_block_mobile', $code);
     ?>
-    <?php echo '<div class="custom-block">'.$this->getLayout()->createBlock('cms/block')->setBlockId($custom_block)->toHtml().'</div>'; ?>
+    <?php echo '<div class="custom-block">'.$this->getLayout()->createBlock('cms/block')->setBlockId($custom_block)->toHtml().'</div>'; ?> -->
 </div>
 <div class="mobile-nav-overlay close-mobile-nav"></div>
 <script type="text/javascript">
@@ -26,29 +26,41 @@ $code  = $store->getCode();
 jQuery(function($){
     $(document).ready(function(){
         var ajax_mobile_url = "<?php echo Mage::getBaseUrl()."swmegamenu/index/showmobilemenu" ?>";
-        $(".menu-icon, .header-container.type10 .dropdown-menu > .menu-container > a").off("mousedown").on("mousedown",function(){
-            if (!$(".mobile-nav ul.menu").hasClass("ajax-loaded") && !$(".mobile-nav ul.menu").hasClass("ajax-loading")) {
-                $(".mobile-nav ul.menu").addClass("ajax-loading");
+        // $(".menu-icon, .header-container.type10 .dropdown-menu > .menu-container > a").off("mousedown").on("mousedown",function(){
+        //     if (!$(".mobile-nav ul.menu").hasClass("ajax-loaded") && !$(".mobile-nav ul.menu").hasClass("ajax-loading")) {
+        //         $(".mobile-nav ul.menu").addClass("ajax-loading");
                 $.ajax({
                     url: ajax_mobile_url,
                     dataType: 'json',
                     type: 'post',
                     success: function(data) {
                         $(".mobile-nav ul.menu").removeClass("ajax-loading").addClass("ajax-loaded").html(data['popup_content']).hide().fadeIn();
-                        $(".mobile-nav ul.menu").find("li.menu-parent-item").prepend('<span class="open-child">(open)</span>');
-                        $(".mobile-nav ul.menu").find(".open-child").off("click").on("click", function(){
-                            if(!$(this).parent().hasClass("over")) {
+                        $(".mobile-nav ul.menu .acl-nlt-header-sec-bot. acl-nlt-header-sec-nav .sections.nav-sections .section-items.nav-sections-items .section-item-content.nav-sections-item-content .navigation.sw-megamenu").find("ul li").prepend('<span class="open-childs">(open)</span>');
+                        $(".mobile-nav ul.menu .acl-nlt-header-sec-bot. acl-nlt-header-sec-nav .sections.nav-sections .section-items.nav-sections-items .section-item-content.nav-sections-item-content .navigation.sw-megamenu ul li.ui-menu-item.level0.fullwidth.parent").find(".open-child").off("click").on("click", function(){
+                            if(!$(this).parent().hasClass("over"))
+                            {
                                 $(this).parent().addClass("over");
                                 $(this).parent().children("ul").slideDown();
-                            } else {
+                                $(this).find('.level0.submenu').addClass('class_name');
+                                $(this).parent().children(".level0.submenu").css({
+                                    visibility:'visible',
+                                    height:'auto'
+                                });
+                            }
+                            else
+                            {
                                 $(this).parent().removeClass("over");
                                 $(this).parent().children("ul").slideUp();
+                                $(this).parent().children(".submenu.level0").css({
+                                    visibility:'hidden',
+                                    height:'0'
+                                });
                             }
                         });
                     }
                 });
-            }
-        });
+    //         }
+    //     });
     });
 });
 <?php endif; ?>
