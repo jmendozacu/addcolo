@@ -298,6 +298,7 @@ if($enable_addtocart_sticky){
                     $storeId = Mage::app()->getStore()->getId();
                     $summaryData = Mage::getModel('review/review_summary')->setStoreId($storeId)->load($_product->getId());
                 ?>
+
                 <?php if ($summaryData['reviews_count']): ?>
                     <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" class="no-display">
                         <span itemprop="ratingValue"><?php echo $summaryData['rating_summary']; ?></span>
@@ -344,11 +345,15 @@ if($enable_addtocart_sticky){
     </div>
     <div class="product-reviews-summary no-rating" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
         <div class="reviews-actions">
-        <a class="action view" href="https://new.addcolo.com/silver-grey-wigs-bob-straight-wavy-2018-summer-best-fashion-colorful-lace-front-wigs.html#reviews">
-            <span itemprop="reviewCount">16</span>&nbsp;
+        <a class="action view" href="#reviews">
+            <?php if ($summaryData['reviews_count']): ?>
+                <span itemprop="reviewCount"><?php echo $summaryData['reviews_count']; ?></span>&nbsp; 
+            <?php else : ?>
+                <span itemprop="reviewCount">0</span>&nbsp; 
+            <?php endif; ?>
             <span>Reviews</span>
         </a>
-        <a class="action add" href="#">Add Your Review</a>
+        <a class="action add" href="#reviews">Add Your Review</a>
      </div>
    </div>
    <?php if ($_product->getShortDescription()):?>

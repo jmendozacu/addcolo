@@ -448,13 +448,13 @@ body.mobile-nav-shown .page{left:250px}
 body.mobile-nav-shown .mobile-nav-overlay{opacity:.15;filter:alpha(opacity=15);visibility:visible}
 .mobile-nav.side-block{position:fixed;top:0;left:-250px;z-index:999;width:250px;height:100%;overflow-y:scroll;padding-top:20px;padding-bottom:20px;transition:all .3s;display:block!important;padding:0;}
 body.mobile-nav-shown .mobile-nav.side-block{left:0;}
-.mobile-nav.side-block .sw-mobile-menu li>a{background-color:transparent;color:#fff;border:0;padding:0 15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mobile-nav.side-block .sw-mobile-menu li>a{background-color:transparent;color:#000;border:0;padding:0 15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .mobile-nav.side-block .sw-mobile-menu>li:first-child>a{border:0}
 .mobile-nav.side-block .sw-mobile-menu>li>ul li{background-color:transparent}
-.mobile-nav.side-block .sw-mobile-menu li .open-child{background-color:transparent;color:#fff}
-.mobile-nav.side-block .sw-mobile-menu li:hover>.open-child{color:#fff}
+.mobile-nav.side-block .sw-mobile-menu li .open-child{background-color:transparent;color:#000}
+.mobile-nav.side-block .sw-mobile-menu li:hover>.open-child{color:#000}
 .mobile-nav.side-block .sw-mobile-menu li>.open-child:hover{background-color:transparent}
-.mobile-nav.side-block .sw-mobile-menu li .open-child:after{content:"\e81c";font-family:"porto";font-size:15px;text-align:center;line-height:19px;background:transparent;opacity:1}
+.mobile-nav.side-block .sw-mobile-menu li .open-child:after{color:#000;content:"\e81c";font-family:"porto";font-size:15px;text-align:center;line-height:19px;background:transparent;opacity:1}
 .mobile-nav.side-block .sw-mobile-menu li.over>.open-child:after{background:transparent;content:"\e81b"}
 .mobile-nav .sw-mobile-menu > li > ul > li a{margin-left:10px;white-space:nowrap}
 .mobile-nav .sw-mobile-menu > li > ul > li li a{margin-left:20px}
