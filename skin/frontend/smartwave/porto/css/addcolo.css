@@ -2813,6 +2813,7 @@ div#click_size tr td span img{
 		position: absolute;
 		right: 5px;
 		line-height: 18px;
+		display: none;
 	}
 	.page-header.type11 .acl-nlt-header-sec-nav .navigation li.level0 > .level-top:hover{
 		background: none !important;

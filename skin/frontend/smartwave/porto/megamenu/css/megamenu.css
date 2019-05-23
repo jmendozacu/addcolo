@@ -373,7 +373,7 @@ border-top: 1px solid #222222; }
 .mobile-nav .sw-mobile-menu li > a:hover {
 background-color: #989898;
 text-decoration: none;
-color: #222;
+color: #d9365a !important;
 -webkit-transition: all 0.2s;
 transition: all 0.2s; }
 .mobile-nav .sw-mobile-menu li > a span.cat-label {
